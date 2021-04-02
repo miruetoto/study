@@ -1,0 +1,1085 @@
+\documentclass[12pt,oneside,english,a4paper]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{wallpaper}
+\usepackage{wrapfig,booktabs}
+
+\usepackage{fancyhdr}
+
+\usepackage{fourier-orns}
+\newcommand{\dash}{\noindent \newline\textcolor{black}{\hrulefill~ \raisebox{-2.5pt}[10pt][10pt]{\leafright \decofourleft \decothreeleft  \aldineright \decotwo \floweroneleft \decoone   \floweroneright \decotwo \aldineleft\decothreeright \decofourright \leafleft} ~  \hrulefill}}
+
+\usepackage{titlesec}
+\titleformat*{\section}{\it\huge\bfseries}
+\titleformat*{\subsection}{\it\huge\bfseries}
+\titleformat*{\subsubsection}{\it\LARGE\bfseries}
+\titleformat*{\paragraph}{\huge\bfseries}
+
+\usepackage[left=20px,right=20px,top=50px,bottom=50px,paperwidth=8in,paperheight=12in]{geometry}
+
+\usepackage[cjk]{kotex}
+\usepackage{amsthm} 
+\usepackage{amsmath} 
+\usepackage{amsfonts}
+\usepackage{enumerate} 
+\usepackage{cite}
+\usepackage{graphics} 
+\usepackage{graphicx,lscape} 
+\usepackage{subcaption}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{titlesec}
+\usepackage{cite, url}
+\usepackage{amssymb}
+
+
+\def\ck{\paragraph{\Large$\bullet$}\Large}
+\def\sol{\paragraph{\Large\textit{\underline{sol:}}}\Large}
+\def\pf{\paragraph{\Large\textit{\underline{proof:}}}\Large}
+\def\note{\paragraph{\Large\textit{\underline{note:}}}\Large}
+\def\ex{\paragraph{\Large\textit{example:}}\Large}
+\def\prob{\paragraph{\Large\textit{\underline{problem:}}}\Large}
+\newcommand{\para}[1]{\paragraph{\Large(#1)}\Large}
+\newcommand{\subpara}[1]{\subparagraph{\Large(#1)}\Large}
+
+\newcommand{\parablue}[1]{\paragraph{\Large\textcolor{blue}{(#1)}}\Large}
+\newcommand{\parared}[1]{\paragraph{\Large\textcolor{red}{(#1)}}\Large}
+
+\def\one{\paragraph{\Large(1)}\Large}
+\def\two{\paragraph{\Large(2)}\Large}
+\def\three{\paragraph{\Large(3)}\Large}
+\def\four{\paragraph{\Large(4)}\Large}
+\def\five{\paragraph{\Large(5)}\Large}
+\def\six{\paragraph{\Large(6)}\Large}
+\def\seven{\paragraph{\Large(7)}\Large}
+\def\eight{\paragraph{\Large(8)}\Large}
+\def\nine{\paragraph{\Large(9)}\Large}
+\def\ten{\paragraph{\Large(10)}\Large}
+
+\def\cka{\paragraph{\Large(a)}\Large}
+\def\ckb{\paragraph{\Large(b)}\Large}
+\def\ckc{\paragraph{\Large(c)}\Large}
+\def\ckd{\paragraph{\Large(d)}\Large}
+\def\cke{\paragraph{\Large(e)}\Large}
+\def\ckf{\paragraph{\Large(f)}\Large}
+\def\ckg{\paragraph{\Large(g)}\Large}
+\def\ckh{\paragraph{\Large(h)}\Large}
+\def\cki{\paragraph{\Large(i)}\Large}
+\def\ckj{\paragraph{\Large(j)}\Large}
+
+\newcommand{\bs}[1]{\mbox{\boldmath $#1$}}
+
+\newcommand{\bsa}{\mbox{\boldmath $a$}}
+\newcommand{\bsb}{\mbox{\boldmath $b$}}
+\newcommand{\bsc}{\mbox{\boldmath $c$}}
+\newcommand{\bsd}{\mbox{\boldmath $d$}}
+\newcommand{\bse}{\mbox{\boldmath $e$}}
+\newcommand{\bsf}{\mbox{\boldmath $f$}}
+\newcommand{\bsg}{\mbox{\boldmath $g$}}
+\newcommand{\bsh}{\mbox{\boldmath $h$}}
+\newcommand{\bsi}{\mbox{\boldmath $i$}}
+\newcommand{\bsj}{\mbox{\boldmath $j$}}
+\newcommand{\bsk}{\mbox{\boldmath $k$}}
+\newcommand{\bsl}{\mbox{\boldmath $l$}}
+\newcommand{\bsm}{\mbox{\boldmath $m$}}
+\newcommand{\bsn}{\mbox{\boldmath $n$}}
+\newcommand{\bso}{\mbox{\boldmath $o$}}
+\newcommand{\bsp}{\mbox{\boldmath $p$}}
+\newcommand{\bsq}{\mbox{\boldmath $q$}}
+\newcommand{\bsr}{\mbox{\boldmath $r$}}
+\newcommand{\bss}{\mbox{\boldmath $s$}}
+\newcommand{\bst}{\mbox{\boldmath $t$}}
+\newcommand{\bsu}{\mbox{\boldmath $u$}}
+\newcommand{\bsv}{\mbox{\boldmath $v$}}
+\newcommand{\bsw}{\mbox{\boldmath $w$}}
+\newcommand{\bsx}{\mbox{\boldmath $x$}}
+\newcommand{\bsy}{\mbox{\boldmath $y$}}
+\newcommand{\bsz}{\mbox{\boldmath $z$}}
+
+\newcommand{\bfa}{\mbox{$\bf{a}$}}
+\newcommand{\bfb}{\mbox{$\bf{b}$}}
+\newcommand{\bfc}{\mbox{$\bf{c}$}}
+\newcommand{\bfd}{\mbox{$\bf{d}$}}
+\newcommand{\bfe}{\mbox{$\bf{e}$}}
+\newcommand{\bff}{\mbox{$\bf{f}$}}
+\newcommand{\bfg}{\mbox{$\bf{g}$}}
+\newcommand{\bfh}{\mbox{$\bf{h}$}}
+\newcommand{\bfi}{\mbox{$\bf{i}$}}
+\newcommand{\bfj}{\mbox{$\bf{j}$}}
+\newcommand{\bfk}{\mbox{$\bf{k}$}}
+\newcommand{\bfl}{\mbox{$\bf{l}$}}
+\newcommand{\bfm}{\mbox{$\bf{m}$}}
+\newcommand{\bfn}{\mbox{$\bf{n}$}}
+\newcommand{\bfo}{\mbox{$\bf{o}$}}
+\newcommand{\bfp}{\mbox{$\bf{p}$}}
+\newcommand{\bfq}{\mbox{$\bf{q}$}}
+\newcommand{\bfr}{\mbox{$\bf{r}$}}
+\newcommand{\bfs}{\mbox{$\bf{s}$}}
+\newcommand{\bft}{\mbox{$\bf{t}$}}
+\newcommand{\bfu}{\mbox{$\bf{u}$}}
+\newcommand{\bfv}{\mbox{$\bf{v}$}}
+\newcommand{\bfw}{\mbox{$\bf{w}$}}
+\newcommand{\bfx}{\mbox{$\bf{x}$}}
+\newcommand{\bfy}{\mbox{$\bf{y}$}}
+\newcommand{\bfz}{\mbox{$\bf{z}$}}
+
+\newcommand{\bsA}{\mbox{\boldmath $A$}}
+\newcommand{\bsB}{\mbox{\boldmath $B$}}
+\newcommand{\bsC}{\mbox{\boldmath $C$}}
+\newcommand{\bsD}{\mbox{\boldmath $D$}}
+\newcommand{\bsE}{\mbox{\boldmath $E$}}
+\newcommand{\bsF}{\mbox{\boldmath $F$}}
+\newcommand{\bsG}{\mbox{\boldmath $G$}}
+\newcommand{\bsH}{\mbox{\boldmath $H$}}
+\newcommand{\bsI}{\mbox{\boldmath $I$}}
+\newcommand{\bsJ}{\mbox{\boldmath $J$}}
+\newcommand{\bsK}{\mbox{\boldmath $K$}}
+\newcommand{\bsL}{\mbox{\boldmath $L$}}
+\newcommand{\bsM}{\mbox{\boldmath $M$}}
+\newcommand{\bsN}{\mbox{\boldmath $N$}}
+\newcommand{\bsO}{\mbox{\boldmath $O$}}
+\newcommand{\bsP}{\mbox{\boldmath $P$}}
+\newcommand{\bsQ}{\mbox{\boldmath $Q$}}
+\newcommand{\bsR}{\mbox{\boldmath $R$}}
+\newcommand{\bsS}{\mbox{\boldmath $S$}}
+\newcommand{\bsT}{\mbox{\boldmath $T$}}
+\newcommand{\bsU}{\mbox{\boldmath $U$}}
+\newcommand{\bsV}{\mbox{\boldmath $V$}}
+\newcommand{\bsW}{\mbox{\boldmath $W$}}
+\newcommand{\bsX}{\mbox{\boldmath $X$}}
+\newcommand{\bsY}{\mbox{\boldmath $Y$}}
+\newcommand{\bsZ}{\mbox{\boldmath $Z$}}
+
+\newcommand{\bfA}{\mbox{$\bf{A}$}}
+\newcommand{\bfB}{\mbox{$\bf{B}$}}
+\newcommand{\bfC}{\mbox{$\bf{C}$}}
+\newcommand{\bfD}{\mbox{$\bf{D}$}}
+\newcommand{\bfE}{\mbox{$\bf{E}$}}
+\newcommand{\bfF}{\mbox{$\bf{F}$}}
+\newcommand{\bfG}{\mbox{$\bf{G}$}}
+\newcommand{\bfH}{\mbox{$\bf{H}$}}
+\newcommand{\bfI}{\mbox{$\bf{I}$}}
+\newcommand{\bfJ}{\mbox{$\bf{J}$}}
+\newcommand{\bfK}{\mbox{$\bf{K}$}}
+\newcommand{\bfL}{\mbox{$\bf{L}$}}
+\newcommand{\bfM}{\mbox{$\bf{M}$}}
+\newcommand{\bfN}{\mbox{$\bf{N}$}}
+\newcommand{\bfO}{\mbox{$\bf{O}$}}
+\newcommand{\bfP}{\mbox{$\bf{P}$}}
+\newcommand{\bfQ}{\mbox{$\bf{Q}$}}
+\newcommand{\bfR}{\mbox{$\bf{R}$}}
+\newcommand{\bfS}{\mbox{$\bf{S}$}}
+\newcommand{\bfT}{\mbox{$\bf{T}$}}
+\newcommand{\bfU}{\mbox{$\bf{U}$}}
+\newcommand{\bfV}{\mbox{$\bf{V}$}}
+\newcommand{\bfW}{\mbox{$\bf{W}$}}
+\newcommand{\bfX}{\mbox{$\bf{X}$}}
+\newcommand{\bfY}{\mbox{$\bf{Y}$}}
+\newcommand{\bfZ}{\mbox{$\bf{Z}$}}
+
+\DeclareMathOperator*{\argmin}{argmin} 
+\DeclareMathOperator*{\argmax}{argmax} 
+
+\usepackage[svgnames]{xcolor}
+\usepackage{listings}
+
+\lstset{language=R,
+    basicstyle=\Large\tt,
+    stringstyle=\color{DarkGreen},
+    otherkeywords={0,1,2,3,4,5,6,7,8,9},
+    morekeywords={TRUE,FALSE},
+    deletekeywords={data,frame,length,as,character},
+    %keywordstyle=\color{blue},
+    commentstyle=\color{DarkGreen},
+}
+\CJKscale{0.9}
+\begin{document}
+
+\section{Notations of Matrix}
+
+\ck 벡터의 표현법
+\begin{align*}
+{\bf X}=[\bsx_1,\dots,\bsx_p]
+\end{align*}
+\begin{align*}
+{\bf X}=\begin{bmatrix} {\bf x}_{1\circ}^\top \\ ... \\ {\bf x}_{n\circ}^\top \end{bmatrix} 
+\end{align*}
+
+\ck 이인석교수님의 교재에서는 매트릭스 ${\bf X}$를 아래와 같이 표현가능하다. 이 역시 매우 유용한 표현이다. 
+\begin{align*}
+{\bf X}=\left\{x_{ij}\right\}
+\end{align*}
+처음에는 이러한 표현이 매우 헷갈렸지만 나중에는 이 표현을 안쓰는 것이 더 고통을 주므로 그냥 쓰기로 결정하였다. 
+
+\subsection{transpose}
+
+\ck 매트릭스 ${\bf X}$의 트랜스포즈는 보통 ${\bf X}^\top$로 표시한다. 혼란의 여지가 없을 경우 노테이션의 간략화를 위하여 ${\bf X}'$와 같이 표현할 수 있다. 매트릭스 ${\bf X}$가 복소행렬일 경우는 트랜스포즈를 사용하지 않고 \textbf{컨쥬게이트-트랜스포즈}(conjugate transpose)를 사용한다. 컨쥬게이트-트랜스포즈는 \textbf{에르미트-트랜스포즈}(Hermitian transpose), \textbf{에르미트-어드조인트}(Hermitian adjoint) 등으로 불리기도 한다. 기호로는 ${\bf X}^H$로 표시한다. 
+
+\ck 임의의 매트릭스 ${\bf X}_ {n \times p}$에 대하여 ${\bf X}'$는 아래와 같이 표현할 수 있다.   
+\one 표현1 
+\begin{align*}
+{\bf X}=[\bsx_1, \dots, \bsx_p], \quad 
+{\bf X}'=\begin{bmatrix} \bsx_1' \\ \dots \\ \bsx_p' \end{bmatrix}.
+\end{align*}
+\two 표현2
+\begin{align*}
+{\bf X}=\begin{bmatrix}{\bsx}_{1\circ}' \\ \dots \\ \bsx_{n\circ}' \end{bmatrix}, \quad 
+{\bf X}'=[\bsx_{1\circ}, \dots, \bsx_{n\circ}].
+\end{align*}
+\three ${\bf X}$가 이인석교수님 스타일로 표현된 경우
+\begin{align*}
+{\bf X}=&\left\{x_{ij}\right\} \\ 
+{\bf X}^\top=&\left\{x_{ji}\right\}.
+\end{align*}
+
+\ck 트랜스포즈는 $L_2$-norm을 구할때 사용할 수 있다.
+\begin{align*}
+\| {\bsy} \|_ 2^2={\bsy}^\top{\bsy}
+\end{align*}
+
+
+\subsection{행렬곱}
+
+\one 표현1 
+\[
+	\bfA \bfB 
+	= [\bsa_1 \dots \bsa_n ] 
+	\begin{bmatrix}
+		\bsb_{1\circ}^\top \\ \dots \\ \bsb_{n\circ}^\top 
+	\end{bmatrix}
+	=\sum_{i=1}^n\bsa_i\bsb_{i\circ}^\top
+\]
+
+\two 표현2
+\begin{align*}
+	\bfA \bfB =\begin{bmatrix}\bsa_{1\circ}^\top \\ \dots \\ \bsa_{n\circ}^\top \end{bmatrix}\Big[\bsb_1\dots \bsb_n\Big] = \begin{bmatrix}
+		\bsa_{1\circ}^\top \bsb_1 & \dots & \bsa_{1\circ}^\top \bsb_n \\ \dots &\dots & \dots \\  \bsa_{n\circ}^\top \bsb_1 & \dots & \bsa_{n\circ}^\top \bsb_n\end{bmatrix}
+\end{align*}
+즉 ${\bf A}{\bf B}$의 $(i,k)$-th component는 ${\bf A}$의 $i$-th row와 ${\bf B}$의 $k$-th column의 내적과 같다.   
+
+\three 표현3 
+\begin{align*}
+	{\bfA}{\bfB}=\begin{bmatrix}
+		\bsa_{1\circ}^\top \\ 
+		\dots \\ 
+		\bsa_{n\circ}^\top
+	\end{bmatrix}{\bfB}=\begin{bmatrix}
+	\bsa_{1\circ}^\top \bfB \\ 
+	\dots \\ 
+	\bsa_{n\circ}^\top\bfB
+\end{bmatrix}
+\end{align*}
+
+\four 표현4 
+\begin{align*}
+	{\bfA}{\bfB}={\bfA} [\bsb_1 \dots,\bsb_n] = [\bfA\bsb_1,\dots,\bfA \bsb_n]
+\end{align*}
+
+\para{예제1}
+\begin{align*}
+{\bf X}{\bs{\beta}}=\begin{bmatrix}\bsx_{1\circ}^\top{\bs{\beta}} \\ \dots \\ \bsx_{n\circ}^\top {\bs{\beta}}\end{bmatrix}
+\end{align*}
+
+\para{예제2} ${\bf X}'{\bf X}$의 표현.
+\begin{align*}
+\bfX'\bfX = [\bsx_{1\circ}^\top,\dots, \bsx_{n\circ}^\top]\begin{bmatrix} \bsx_{1\circ} \\ \dots \\ \bsx_{n\circ} \end{bmatrix}=\sum_{i=1}^{n} \bsx_{i\circ}^\top \bsx_{i\circ}
+\end{align*}
+
+\para{예제3} 고유치분해 ($\bfX^\top\bfX = {\boldsymbol \Psi}{\boldsymbol\Lambda}{\boldsymbol\Psi}^\top$)
+\begin{align*}
+{\boldsymbol \Psi}{\boldsymbol\Lambda}{\boldsymbol\Psi}^\top= \sum_{i =1}^{p} \boldsymbol{\psi}_i \lambda_i  \boldsymbol{\psi}_i^\top.
+\end{align*}
+
+
+\para{예제4} 특이값분해 ($\bfX=\bfU\bfD\bfV^\top$)
+\begin{align*}
+{\bf U}{\bfD}{\bf V}^\top= \sum_{i =1}^{p} \bsu_i d_i \bsv_i\top
+\end{align*}
+
+\subsection{트레이스}
+
+\ck $tr({\bf A})=tr({\bf A}')$
+
+\ck $tr({\bf A}{\bf B}{\bf C})=tr({\bf B}{\bf C}{\bf A})=tr({\bf C}{\bf A}{\bf B})$
+
+\ck 임의의 col-vector $\bsy$에 대하여 아래식이 성립한다. 
+\begin{align*}
+\bsy^\top\bsy=tr(\bsy\bsy^\top)
+\end{align*}
+
+\dash 
+
+\section{고유치분해}
+\subsection{기본개념}
+\ck 임의의 정사각행렬 ${\bf A}_ {n \times n}$에 대하여 어떠한 벡터 ${\boldsymbol \psi}_ {n \times 1} \neq {\bf 0}$가 적당한값 $\lambda$에 대하여 아래식을 만족하면 $\boldsymbol \psi$를 $\bf A$의 고유벡터라고 한다. 
+\begin{align*}
+{\bf A}{\boldsymbol \psi}= \lambda {\boldsymbol \psi}
+\end{align*}
+주의할것은 $\bs{0}$-벡터는 고유벡터로 취급하지 않는다는 것이다. 
+
+\ck \textbf{고유값이 없는 정사각행렬은 없다.} 고유값이 없다는 말은 $$\bf{det}({\bf A}-\lambda {\bf I})=0$$을 만족하는 $\lambda$가 없다는 말인데 임의의 $n$차 다항식의 해는 항상 존재하므로(정확하게는 모르겠지만 왠지 이런 정리가 있을것 같다) 어떠한 정사각행렬 ${\bf A}_ {n \times n}$도 $n$개의 고유값을 가진다. 다만 중복근이 존재할 수 있으므로 ${\bf A}_ {n \times n}$가 서로 다른 $n$개의 고유값을 가질 필요는 없다. 
+
+\ck \textbf{하나의 고유값에 대응하는 고유벡터가 반드시 하나는 존재한다.} 일단 ${\bf A}_ {n \times n}$는 항상 $n$개의 고유값을 가진다. 그중에서 하나의 고유값 $\lambda^* $를 fix했다고 하자. 고유벡터가 없다는 말은 
+\begin{align*}
+\left({\bf A}-\lambda^* {\bf I}\right){\boldsymbol \psi}={\boldsymbol 0}
+\end{align*}
+를 만족하는 벡터 $\boldsymbol \psi$는 오직 ${\boldsymbol \psi}={\boldsymbol 0}$인 경우일 때 뿐이란 것을 의미한다. 그런데 고유값의 정의상 $\bf{det}({\bf A}-\lambda^* {\bf I})=0$이 된다. 따라서 행렬 ${\bf A}-\lambda^* {\bf I}$은 \textbf{sing}-매트릭스가 된다. 따라서 ${\bf A}-\lambda^* {\bf I}$의 rows는 일차독립이 아니다. 따라서  $({\bf A}-\lambda^* {\bf I}){\boldsymbol \psi}={\boldsymbol 0}$을 만족하는 ${\boldsymbol \psi} \neq {\boldsymbol 0}$ 인 벡터가 적어도 하나는 존재한다. 
+
+\ck 따라서 모든 정사각행렬은 고유벡터와 고유값을 반드시 가진다. 또한 하나의 고유값에 대응하는 고유벡터가 반드시 하나는 있다. 
+
+\ck 하지만 하나의 고유값에 반드시 하나의 고유벡터만 대응되는 것은 아니다. 예를들어서 $\bf A=I$일 경우와 $\bf A=O$일 경우가 그렇다. $\bf A=I$의 고유값은 $1$이고 고유벡터는 \textbf{all non-zero vectors}다. 그리고 $\bf A=O$의 고유값은 $0$인데 고유벡터는 역시 \textbf{all non-zero vectors}다. 이러한 사실들이 말해주는 것은 하나의 고유치에 대응하는 고유벡터가 무한개일 수도 있다는 것이다. 
+
+\ck ${\bf A}_ {n \times n}$의 서로 다른 고유값에 대응하는 고유벡터는 선형적으로 독립이다. 요건 서로 다른 고유값 2개를 잡고 귀류법을 쓰면 엄청 쉽게 증명할 수 있다. 
+
+
+\ck 지금까지 정리한 사항을 잘 추론하면 아래와 같은 사실들을 정리할 수 있다. 아래 사실들 중 당연하게 느껴지지 않는 사실들은 자주 읽으면서 외우는것이 좋다. 
+\one $n \times n$-행렬은 반드시 $n$개의 고유값을 가진다. 
+\two 이 고유값들이 중복근일 경우가 있으므로 \textbf{서로 다른} $n$개의 고유값을 가질 필요는 없다. 
+\three 한개의 고유값에는 반드시 한개 이상의 고유벡터가 대응한다. (특정한 고유치를 고정하면 그에 대응하는 고유벡터는 항상 존재해야 하므로) 
+\four 하지만 한개의 고유치에 반드시 한개의 고유벡터만 대응할 필요는 없다. 때에 따라서 한개의 고유치에 여러개의 고유벡터가 대응할수도 있다. 
+
+\ck 위의 사실들을 잘 조합해보면 $n \times n$-행렬의 아이겐벡터가 \emph{span}하는 차원이 $n$보다 작을 경우는 (i) 고유값들이 중복근을 가지며 (즉 (2)의 케이스) (ii) 그 중복근에 대응하는 고유벡터들이 \emph{span}하는 공간의 차원이 중복근의 수보다 작은 경우이다. \textbf{그리고 바로 이 경우가 ${\bf A}_ {n \times n}$을 대각화할 수 없는 경우에 해당한다.}
+
+\ck 따라서 대각화가능 여부를 체크하려면 아래의 과정을 거치면된다. 
+\one 정사각행렬 $\bfA$의 모든 고유치를 구하고 중복근이 있는지 체크한다. 
+\begin{itemize}
+\item 중복근이 없음 $\Longrightarrow$ 대각화가능. 
+\item 중복근이 있음 $\Longrightarrow$ (2)로 넘어간다. 
+\end{itemize}
+\two 중복근이 있다면 중복근의 수와 중복근에 해당하는 고유벡터의 차원을 조사해본다. 고유벡터들이 스팬하는 차원과 중복근의 수가 같다면 대각화가 가능하다. 
+\three 그게 아니라면 대각화가 불가능하다. 
+
+  
+\ck \textbf{${\bf A}_ {n\times n}$이 대각화가능할 필요충분조건은 $\bf A$의 고유벡터들이 \emph{span}하는 공간이 $n$차원일 경우이다.} 가끔 가다가 ${\bf A}_ {n\times n}$이 대각화가능할 필요충분조건이 $\bf A$의 랭크가 $n$이라고 착각하는 사람들이 있는데 이것은 사실이 아니다. $\bf A$의 랭크가 $n$이 아니어도 대각화 가능한 행렬은 얼마든지 있다. 바로 위에서 예를 든것처럼 
+\[
+\bfA=\bf O
+\]
+도 대각화 가능하고 
+\[
+\bfA=\begin{bmatrix} 1 & 2 \\ 2 & 4\end{bmatrix}
+\]
+와 같은 행렬도 (\emph{real-symm}-매트릭스이므로) 대각화 가능하다. 
+
+\ck \textbf{모든 대칭행렬은 (1) 대각화가능하며 (2) 실수의 고유값을 가지며 (3) 아이겐벡터들이 서로 직교한다.} 
+
+\note 행렬의 원소가 복소수이면 대칭행렬대신에 에르미트행렬을 부르기도 한다. 
+
+\ck 모든 고유값이 양수인 대칭행렬을 \textbf{\emph{positive-definite matrix}} 라고 한다. 기호로는 \emph{(symm)-pd}-매트릭스라고 쓰겠다. 
+
+\note \emph{pd}-매트릭스는 기본적으로 \emph{symm}이어야 하므로 \emph{(symm)-pd}-매트릭스라고 표현하였다. 
+
+\ck (symm)-pd-매트릭스는 모든 non-zero vector ${\boldsymbol y}$에 대하여 아래식을 만족한다. 
+\begin{align*}
+{\boldsymbol y}^\top{\bf A}{\boldsymbol y}>0
+\end{align*}
+이는 ${\bf A}={\boldsymbol \Psi}{\boldsymbol \Lambda}{\boldsymbol \Psi}^\top$꼴로 변형하고 위의 식의 대입하면 쉽게 증명할 수 있다. 반대로 어떠한 정사각행렬 ${\bf A}$가 모든 non-zero vector ${\boldsymbol y}$에 대하여 위의 식을 만족하면 이 행렬 ${\bf A}$는 (1) 대칭이며 (2) 모든 고유치가 양수인 행렬이 된다(이것도 쉽게 증명된다). 
+
+\ck 따라서 양정치행렬을 아래와 같이 정의하기도 한다. 
+\begin{align*}
+\mbox{$\bfA$ is \emph{(symm)-pd-matrix}} \overset{def}{\Longleftrightarrow} \forall {\boldsymbol y}\neq {\boldsymbol 0}: ~~ {\boldsymbol y}^\top{\bf A}{\boldsymbol y}>0
+\end{align*}
+
+\subsection{미세먼지 팁}
+\ck \textbf{모든 고유값들의 합은 원래 행렬의 trace와 같고 모든 고유값들의 곱은 원래 행렬의 determinent와 같다. 이 사실은 임의의 정사각행렬에서 성립한다.} 즉 임의의 정사각행렬에서 
+\begin{align*}
+& \bf{tr}({\bf A}_ {n \times n})=\sum_{i=1}^{n} \lambda_i \\ 
+& \bf{det}({\bf A}_ {n \times n})=\prod_{i=1}^{n}\lambda_i
+\end{align*}
+이다. 이 사실은 그냥 증명없이 외우자. 
+
+\ck \textbf{sing-매트릭스의 고유값에는 0이 적어도 하나는 포함되어 있다.} 이 사실은 \textbf{모든 고유값들의 곱은 원래 행렬의 determinent와 같다}는 사실을 떠올리면 쉽게 이해할 수 있다. 
+
+\ck $A_{n \times n}$모든 col의 합이 1인 행렬을 \textbf{markov}-매트릭스라고 한다. \textbf{markov-매트릭스의 고유값들중 최소한 하나는 1이고 나머지 고유값은 모두 1보다 작다.} 이 사실은 그냥 증명없이 외우자. 
+
+\ck \textbf{행렬 ${\bf A}=\begin{bmatrix} a & b \\ c & d \end{bmatrix}$ 에서 고정된 고유값 $\lambda^* $에 대한 고유벡터는 $$\begin{bmatrix}-b \\ a-\lambda^* \end{bmatrix}$$이다.} 이건 그냥 혼자 유추한것인데 상당히 유용하다. 증명은 그렇게 어렵지 않다. 우선 임의의 $2 \times 2$-행렬의 고유값과 고유벡터는 항상 존재한다는 사실에서 시작하자. 이때 존재하는 고유치를 $\lambda^*$라고 하자. 하나의 고유치에 반드시 하나이상의 고유벡터가 존재하므로 고유벡터 $\boldsymbol \psi$의 존재성도 보장된다. 이제 $\boldsymbol \psi=\begin{bmatrix} -b \\ a-\lambda^* \end{bmatrix}$임을 보이자. 아래가 성립함을 보이면된다.
+\[
+\begin{bmatrix}a & b \\ c & d \end{bmatrix} \begin{bmatrix} -b \\ a-\lambda^* \end{bmatrix}=\lambda^* \begin{bmatrix} -b \\ a-\lambda^* \end{bmatrix}
+\]
+정리하면 
+\[
+\begin{bmatrix} -\lambda^*b \\ ad-bc-\lambda^*d \end{bmatrix}=\lambda^* \begin{bmatrix} -b \\ a-\lambda^* \end{bmatrix}
+\]
+따라서 
+\begin{align*}
+& ad-bc-\lambda^*d = \lambda^*(a-\lambda^*) \\ 
+& \Longleftrightarrow d(a-\lambda^*)-bc = \lambda^*(a-\lambda^*) \\
+& \Longleftrightarrow (d-\lambda^*)(a-\lambda^*)-bc = 0 
+\end{align*}
+임을 보이면 된다. 마지막식은 $\lambda^*$에 대한 특성방정식 즉 
+\begin{align*}
+\bf{det}\left({\bf A}-\lambda^* {\bf I}\right)=0
+\end{align*}
+이므로 성립한다. 따라서 증명이 끝난다. 
+
+\ck 매트릭스 
+\[
+{\bf A}=\begin{bmatrix}0.5 & 0.5 \\ 0.5 & 0.5 \end{bmatrix}
+\]
+를 생각하여 보자. $\bf A$는 sing-매트릭스이므로 0을 고유값으로 가진다. 또한 $\bf A$는 markov-매트릭스 이므로 1을 고유값으로 가진다(그리고 다른 고유값은 모두 1보다 작음). 종합하면 $\bf A$의 고유값은 $\lambda_1=0, \lambda_2=1$이다. 따라서 대응하는 고유벡터는 
+\begin{align*}
+& \boldsymbol{\psi}_1=\begin{bmatrix} -b \\ a-\lambda_1 \end{bmatrix}=\begin{bmatrix} -0.5 \\ 0.5\end{bmatrix}  \\ 
+& \boldsymbol{\psi}_2=\begin{bmatrix} -b \\ a-\lambda_2 \end{bmatrix}=\begin{bmatrix} -0.5 \\ -0.5\end{bmatrix}
+\end{align*}
+이다. 
+
+\ck \textbf{모든 고유값들의 합은 원래 행렬의 trace와 같고 모든 고유값들의 곱은 원래 행렬의 determinent와 같다.} 이 2개의 사실을 연립하여 풀면 모든 $2 \times 2$-매트릭스의 고유값을 쉽게 구할 수 있다. 가령 예를 들면 
+$${\bf A}=\begin{bmatrix} 1 & 2 \\ 2 & 4 \end{bmatrix}$$
+인 행렬을 생각하자. $\lambda_1+\lambda_2=5$ 이고 $\lambda_1 \lambda_2=0$ 이다. 따라서 고유값은 0과 5임을 쉽게 유추할 수 있다. 그리고 고유값만 알면 고유벡터는 아래공식으로 바로 찾을 수 있다. 
+\[
+{\boldsymbol\psi}=\begin{bmatrix}-b \\ a-\lambda \end{bmatrix}
+\]
+$c(-b,\lambda-a)$로 바로 찾아질 수 있다. 예를 들어서 이 행렬에서 $0$과 $5$에 대응하는 고유벡터는 각각 
+\[
+\begin{bmatrix}-2 \\ 1\end{bmatrix} \quad \begin{bmatrix}-2 \\ -4\end{bmatrix}
+\]
+이다. 
+
+\ck 임의의 정사각행렬 ${\bf A}$의 값이 모두 실수여도 그 고유값이 반드시 실수인것은 아니다. 
+\[
+{\bf A}=\begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}
+\]
+을 생각하여 보자. 
+$$
+\begin{cases}
+\lambda_1+\lambda_2=tr(\bfA)=0 \\
+\lambda_1 \lambda_2=det(\bfA)=1
+\end{cases}
+$$
+이고 $i$와 $-i$가 해당조건을 만족하므로 ${\bf A}$의 고유값은 $i$와 $-i$이다. 이때 고유값 $i$에 대응하는 고유벡터는 각각 
+\[
+\begin{bmatrix} 1 \\ -i \end{bmatrix} \quad \begin{bmatrix} 1 \\ i \end{bmatrix}
+\]
+이다. 
+
+\ck \textbf{${\bf A}$가 \emph{orthogonal}-매트릭스이면 모든 고유값들의 절대값이 1이다.} 즉 $|\lambda|=1$이다. 이것은 귀류법을 쓰면 쉽게 증명가능하다.
+
+\ck $\bfA$가 \textbf{\emph{(symm)-psd}}-매트릭스라면 고유벡터행렬 $\bs{\Psi}$가 (1) 직교 (2) 대칭 (3) 멱등행렬이다. 즉
+\begin{align*}
+& \bs{\Psi}\bs{\Psi}^\top=\bs{\Psi}^\top\bs{\Psi}=\bfI \\
+& \bs{\Psi}=\bs{\Psi}^\top \\
+& \bs{\Psi}^2=\bfI.
+\end{align*}
+아래와 같은 행렬을 생각해보자. 
+\begin{align*}
+{\bf A}=\begin{bmatrix} 4 & 2 \\ 2 & 4 \end{bmatrix}
+\end{align*}
+고유치를 풀기위해서는 아래를 연립하면 된다. 
+\begin{align*}
+& \lambda_1 +\lambda_2 = 8 \\ 
+& \lambda_1 \lambda_2 = det({\bf A})=12 
+\end{align*}
+따라서 고유치는 6과 2이다. 따라서 각각의 고유벡터는 아래와 같다. 
+\begin{align*}
+\begin{bmatrix} -2 \\ 4-6 \end{bmatrix} \quad \begin{bmatrix} -2 \\ 4-2 \end{bmatrix}
+\end{align*}
+따라서 이를 표준화하면 $\boldsymbol\Psi$는 아래와 같다. 
+\begin{align*}
+{\boldsymbol \Psi} = \begin{bmatrix} -\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \end{bmatrix} 
+\end{align*}
+이 행렬은 (1) 직교 (2) 대칭 (3) 멱등행렬이 된다. 
+
+\dash 
+
+\section{Singular Value Decomposition}
+ 
+\ck SVD는 아래와 같이 정의하는 것이 편리하다. 
+\begin{align*}
+{\bf X}_ {n\times p}={\bf U}_ {n\times n} {\bf D}_ {n \times p} {\bf V}_ {p\times p}^\top
+\end{align*}
+\textbf{이때 ${\bf D}$는 대각행렬이 아니다.} (문헌에 따라서 $\bf D$를 대각행렬로 정의하는 버전도 있는데 이는 그냥 무시하자.) 이렇게 ${\bf D}$를 대각행렬로 정의하지 않으면 $\bfU$와 $\bfV$가 동시에 직교행렬이 된다. 즉 아래가 성립한다. 
+\begin{align*}
+& \bf U^\top U=UU^\top=I\\ 
+& \bf V^\top V=VV^\top=I
+\end{align*}
+
+\ck 만약에 행렬 ${\bf A}$가 \textbf{\emph{(symm)-psd}}인 경우 (1) 좌고유벡터행렬과 우고유벡터행렬이 같아진다. 즉 SVD와 고유치분해가 같아진다. 또한 (2) 고유벡터행렬은 직교/대칭/멱등 행렬이 된다. 따라서 아래와 같이 표현가능하다. 
+\begin{align*}
+\bfA \mbox { is \emph{(symm)-psd matrix}} \Longrightarrow \bf A= UDV^\top=\Psi \Lambda \Psi^\top
+\end{align*}
+구체적으로는 아래가 성립한다. 
+\begin{align*}
+& {\bf U}={\bf V}={\bf U}^\top={\bf V}^\top={\boldsymbol \Psi}={\boldsymbol \Psi}^\top \\
+& {\bf D}={\boldsymbol \Lambda}
+\end{align*}
+따라서 ${\bf A}$가 \textbf{\emph{(symm)-psd}}일 경우 아래와 같이 R-code를 짜도 좋다. 
+\begin{lstlisting}{language=R}
+.
+> svdrslt<-svd(A)
+> D<-diag(svdrslt$d)
+> U<-svdrslt$u; 
+> V<-svdrslt$v; 
+> Lambda<-D
+> Psi<-U
+.
+\end{lstlisting}
+당연히 위와 같이 짠뒤에 
+\begin{lstlisting}
+.
+> U%*%D%*%t(V)
+.
+\end{lstlisting}
+혹은 
+\begin{lstlisting}
+.
+> Psi%*%Lambda%*%t(Psi)
+.
+\end{lstlisting}
+를 실행하면 원래 행렬이 만들어진다. 그리고 이 경우에 한정하여 아래가 성립한다. 
+\begin{align*}
+{\bf U}^2={\bf V}^2={\boldsymbol \Psi}^2={\bf I}
+\end{align*}
+
+\dash
+
+\section{미분}
+
+\ck row-vector / col-vector 를 구분하면서 정리하겠다. 
+
+\subsection{Notations}
+
+\one \textbf{스칼라로 미분}
+
+\note 스칼라로 미분할 경우 분자는 스칼라,벡터,매트릭스 모두 가능하다. 
+
+\ck $\frac{\partial \bsz}{\partial y}$의 계산:
+\[
+\frac{\partial \bsz}{\partial y}=\frac{\partial}{\partial y}  \bsz=\bsz=\frac{\partial}{\partial y}\begin{bmatrix}  z_1 \\ z_2 \\ \dots  \\ z_n \end{bmatrix}=\begin{bmatrix} \frac{\partial z_1}{\partial y} \\ \frac{\partial z_2}{\partial y} \\ \dots  \\ \frac{\partial z_n}{\partial y} \end{bmatrix}
+\]
+
+
+\two \textbf{벡터로 미분}
+
+\note 벡터로 미분할 경우 분자는 스칼라 혹은 벡터이어야 한다. 
+
+\ck $\frac{\partial z}{\partial \bsy}$의 계산: 
+\[
+\frac{\partial z}{\partial \bsy}=\frac{\partial}{\partial \bsy}  z=\begin{bmatrix} \frac{\partial}{\partial y_1} \\ \frac{\partial}{\partial y_{2}} \\ \dots  \\ \frac{\partial}{\partial y_n} \end{bmatrix} z=\begin{bmatrix} \frac{\partial z}{\partial y_1} \\ \frac{\partial z}{\partial y_{2}} \\ \dots  \\ \frac{\partial z}{\partial y_n} \end{bmatrix}
+\]
+
+\ck $\frac{\partial }{\partial \bsy}\bsz^\top$의 계산: 
+\[
+\frac{\partial }{\partial \bsy}\bsz^\top=\begin{bmatrix} \frac{\partial}{\partial y_1}  \begin{bmatrix} z_1 & z_2 & \dots  & z_n \end{bmatrix} \\ \frac{\partial}{\partial y_{2}}  \begin{bmatrix} z_1 & z_2 & \dots  & z_n \end{bmatrix} \\ \dots  \\ \frac{\partial}{\partial y_n}  \begin{bmatrix} z_1 & z_2 & \dots  & z_n \end{bmatrix} \end{bmatrix}
+=\begin{bmatrix} 
+\frac{\partial z_1}{\partial y_1} & \frac{\partial z_2}{\partial y_1} & \dots  & \frac{\partial z_n}{\partial y_1} \\
+\frac{\partial z_1}{\partial y_2} & \frac{\partial z_2}{\partial y_2} & \dots  & \frac{\partial z_n}{\partial y_2} \\
+\dots & \dots & \dots  & \dots \\
+\frac{\partial z_1}{\partial y_n} & \frac{\partial z_2}{\partial y_n} & \dots  & \frac{\partial z_n}{\partial y_n}
+\end{bmatrix}
+\]
+\note $\frac{\partial}{\partial \bsy}$자체를 $n\times 1$ 매트릭스로 생각하고 $\bsz^\top$를 $1\times n$ 매트릭스로 생각하는 것이 편하다. 즉 아래와 같이 생각하자. 
+\[
+\frac{\partial }{\partial \bsy}\bsz^\top=
+\begin{bmatrix}
+\frac{\partial}{\partial y_1}\\
+\dots\\
+\frac{\partial}{\partial y_n}\\
+\end{bmatrix}
+[z_1,\dots,z_n]=\begin{bmatrix} 
+\frac{\partial z_1}{\partial y_1} & \frac{\partial z_2}{\partial y_1} & \dots  & \frac{\partial z_n}{\partial y_1} \\
+\frac{\partial z_1}{\partial y_2} & \frac{\partial z_2}{\partial y_2} & \dots  & \frac{\partial z_n}{\partial y_2} \\
+\dots & \dots & \dots  & \dots \\
+\frac{\partial z_1}{\partial y_n} & \frac{\partial z_2}{\partial y_n} & \dots  & \frac{\partial z_n}{\partial y_n}
+\end{bmatrix}
+\]
+
+\ex $\frac{\partial \bsy^\top \bfX\bs{\beta}}{\partial \bs{\beta}}$의 계산: 
+\begin{align*}
+& \frac{\partial \bsy^\top \bfX\bs{\beta}}{\partial \bs{\beta}}=\bigg(\frac{\partial}{\partial \bs{\beta}}\bigg)\bigg(\bsy^\top \bfX\bs{\beta}\bigg)
+=\bigg(\frac{\partial}{\partial \bs{\beta}}\bigg)\bigg(\bs{\beta}^\top\bfX^\top \bsy\bigg)\\ 
+&= \bigg(\frac{\partial}{\partial \bs{\beta}}\bs{\beta}^\top\bigg)\bigg(\bfX^\top \bsy\bigg)=\bfI \bfX^\top \bsy=\bfX^\top\bsy
+\end{align*}
+\note ($\bigstar\bigstar\bigstar$) 아래가 항상 성립하지는 않음을 이해해야한다. 
+\[
+\bigg(\frac{\partial}{\partial \bs{\beta}}\bigg)\bigg(\bs{\beta}^\top\bfX^\top \bsy\bigg)= \bigg(\frac{\partial}{\partial \bs{\beta}}\bs{\beta}^\top\bigg)\bigg(\bfX^\top \bsy\bigg)
+\]
+즉 편의상
+\begin{align*}
+& \bfA:=\frac{\partial}{\partial \bs{\beta}}\\ 
+& \bfB:=\bs{\beta}^\top\frac{\partial}{\partial \bs{\beta}} \\ 
+& \bfC: \bfX^\top\bsy
+\end{align*} 
+와 같이 각각을 매트릭스처럼 생각할 수 있지만 $\bfA$의 경우 진짜 매트릭스는 아니기 때문에 항상 아래와 같은 결합법칙이 성립하는 것은 아니다. 
+\[
+\bfA (\bfB \bfC)=(\bfA \bfB) \bfC
+\]
+\note 즉 $\bfA (\bfB \bfC)$만 맞는 표현이다. 
+
+\note 결합법칙이 성립하지 않음은 아래의 예제를 고려하면 좀더 쉽게 이해될 것이다. 
+
+\ex $\frac{\partial\bsy^\top\bsy}{\partial\bsy}$의 계산: 
+\para{방법1}
+\[
+\frac{\partial}{\partial\bsy}\bsy^\top\bsy=\frac{\partial}{\partial\bsy}\sum_{i=1}^{n}y_i^2=2\bsy
+\]
+
+\note 즉 위를 $\frac{\partial}{\partial\bsy}\bsy^\top\bsy=\bigg(\frac{\partial}{\partial\bsy}\bsy^\top \bigg)\bsy=\bfI\bsy=\bsy$와 같이 계산하지 않도록 해야한다. 
+
+\para{방법2} 아래와 같이 풀수도 있다. (곱의미분법)
+\begin{align*}
+&\frac{\partial}{\partial\bsy}\left(\bsy^\top\bsy\right)=\frac{\partial}{\partial\bsy}\left(\textcolor{red}{\bsy^\top}\bsy\right)+\frac{\partial}{\partial\bsy}\left(\bsy^\top\textcolor{red}{\bsy}\right)=\frac{\partial}{\partial\bsy}\left(\textcolor{red}{\bsy^\top}\bsy\right)+\frac{\partial}{\partial\bsy}\left(\textcolor{red}{\bsy^\top}\bsy\right)\\ 
+&=\left(\frac{\partial}{\partial\bsy}\textcolor{red}{\bsy^\top}\right)\bsy+\left(\frac{\partial}{\partial\bsy}\textcolor{red}{\bsy^\top}\right)\bsy=2\bsy
+\end{align*}
+
+\ex $\frac{\partial \bs{\beta}^\top \bfX^\top\bfX\bs{\beta}}{\partial \bs{\beta}}$의 계산: 
+\para{방법1} 체인룰과 $\frac{\partial\bsy^\top\bsy}{\partial\bsy}=2\bsy$임을 이용하면 쉽게 풀 수 있다. 
+편의상 
+\begin{align*}
+& \bfX\bs{\beta}=\bsa=\begin{bmatrix}a_1 \\ \dots \\ a_n\end{bmatrix}
+\end{align*}
+라고 보자. 여기에서 $a_i=\bfx_i\bs{\beta}$ 이다. 아래를 관찰하라. 
+\[
+\bs{\beta}^\top \bfX^\top \bfX \bs{\beta}=\sum_{i=1}^{n}a_i^2=\bsa^\top\bsa
+\]
+체인룰에 의하여 
+\[
+\frac{\partial}{\partial\bs{\beta}}
+=\bigg(\frac{\partial\bsa^\top}{\partial\bs{\beta}}\bigg)
+\bigg(\frac{\partial}{\partial\bsa}\bigg)
+\]
+가 성립하므로 아래를 계산하면 된다. 
+\[
+\bigg(\frac{\partial\bsa^\top}{\partial\bs{\beta}}\bigg)\bigg(
+\frac{\partial}{\partial\bsa}\bigg)\bsa^\top\bsa
+\]
+그런데 
+\begin{align*}
+& \bigg(\frac{\partial\bsa^\top}{\partial\bs{\beta}}\bigg)=\bigg(\frac{\partial}{\partial\bs{\beta}}\bigg)\bs{\beta}^\top\bfX^\top=
+\bigg(\frac{\partial}{\partial\bs{\beta}}\bs{\beta}^\top\bigg)\bfX^\top=\bfX^\top \\ 
+& \bigg(\frac{\partial}{\partial\bsa}\bigg)\bsa^\top\bsa=2\bsa=2\bfX\bs{\beta} \end{align*}
+따라서 
+\[
+\frac{\partial \bs{\beta}^\top \bfX^\top\bfX\bs{\beta}}{\partial \bs{\beta}}=2\bfX^\top\bfX\bs{\beta}
+\]
+\para{방법2} 곱의 미분법을 써보자. 
+\begin{align*}
+&\frac{\partial \bs{\beta}^\top \bfX^\top\bfX\bs{\beta}}{\partial \bs{\beta}}=
+\frac{\partial \textcolor{red}{\bs{\beta}^\top} \bfX^\top\bfX\bs{\beta}}{\partial \bs{\beta}}+
+\frac{\partial \bs{\beta}^\top \bfX^\top\bfX\textcolor{red}{\bs{\beta}}}{\partial \bs{\beta}}\\
+&=\frac{\partial \textcolor{red}{\bs{\beta}^\top} \bfX^\top\bfX\bs{\beta}}{\partial \bs{\beta}}+
+\frac{\partial \textcolor{red}{\bs{\beta}^\top} \bfX^\top\bfX\bs{\beta}}{\partial \bs{\beta}}=2\bfX^\top\bfX\bs{\beta}
+\end{align*}
+
+
+\three\textbf{매트릭스로 미분}
+\note 매트릭스로 미분할경우 분자는 항상 스칼라이어야 함. 스칼라가 아니면 텐서곱을 정의해야할 것 같음. 
+
+\ck $\frac{\partial x}{\partial \bfY}$의 계산: 
+\[
+\frac{\partial x}{\partial \bfY}=
+\begin{bmatrix}
+\frac{\partial}{\partial y_{11}} & \frac{\partial}{\partial y_{12}} & \dots & \frac{\partial}{\partial y_{1p}} \\ 
+\frac{\partial}{\partial y_{21}} & \frac{\partial}{\partial y_{22}} & \dots & \frac{\partial}{\partial y_{2p}} \\
+\dots & \dots & \dots & \dots \\
+\frac{\partial}{\partial y_{n1}} & \frac{\partial}{\partial y_{n2}} & \dots & \frac{\partial}{\partial y_{np}} 
+\end{bmatrix}x
+=\begin{bmatrix}
+\frac{\partial x}{\partial y_{11}} & \frac{\partial x}{\partial y_{12}} & \dots & \frac{\partial x}{\partial y_{1p}} \\ 
+\frac{\partial x}{\partial y_{21}} & \frac{\partial x}{\partial y_{22}} & \dots & \frac{\partial x}{\partial y_{2p}} \\
+\dots & \dots & \dots & \dots \\
+\frac{\partial x}{\partial y_{n1}} & \frac{\partial x}{\partial y_{n2}} & \dots & \frac{\partial x}{\partial y_{np}} 
+\end{bmatrix}
+\]
+
+\subsection{쓸만한 공식}
+\subsubsection{In statistics}
+\ck $\frac{\partial\bsy^\top\bfX\bs{\beta}}{\partial\bs{\beta}}=\bfX^\top\bsy$
+
+\ck $\frac{\partial\bsy^\top\bsy}{\partial\bsy}=2\bsy$
+
+\ck $\frac{\partial\bs{\beta}^\top\bfX^\top\bfX\bs{\beta}}{\partial\bs{\beta}}=2\bfX^\top\bfX\bs{\beta}$
+
+\subsubsection{Matrix Cookbook}
+\parared{69} $\frac{\partial\bsx^\top\bsa}{\partial\bsx}=\frac{\partial\bsa^\top\bsx}{\partial\bsx}=\bsa$
+
+\parared{70} $\frac{\partial\bsa^\top\bfX\bsb}{\partial\bfX}=\bsa\bsb^\top$
+
+\parared{71} $\frac{\partial\bsa^\top\bfX^\top\bsb}{\partial\bfX}=\bsb\bsa^\top$
+
+\parared{72} $\frac{\partial\bsa^\top\bfX^\top\bsa}{\partial\bfX}=\frac{\partial\bsa^\top\bfX\bsa}{\partial\bfX}=\bsa\bsa^\top$
+
+\parared{77} $\frac{\partial\bsb^\top\bfX^\top\bfX\bsc}{\partial\bfX}=\bfX(\bsb\bsc^\top+\bsc\bsb^\top)$
+
+\parared{78} $\frac{\partial(\bfB\bsx+\bsb)^\top\bfC(\bfD\bsx+\bsd)}{\partial \bsx}=\bfB^\top\bfC(\bfD\bsx+\bsd)+\bfD^\top\bfC^\top(\bfB\bsx+\bsb)$
+
+\parared{81} $\frac{\partial\bsx^\top\bfB\bsx}{\partial \bsx}=(\bfB+\bfB^\top)\bsx$
+
+\parared{82} $\frac{\partial\bsb^\top\bfX^\top\bfD\bfX\bsc}{\partial \bsX}=\bfD^\top\bfX\bsb\bsc^\top+\bfD\bfX\bsc\bsb^\top$
+
+\parared{83} $\frac{\partial(\bfX\bsb+\bsc)^\top\bfD(\bfX\bsb+\bsc)}{\partial \bfX}=(\bfD+\bfD^\top)(\bfX\bsb+\bsc)\bsb^\top$
+
+\paragraph{\Large\underline{proof of \textcolor{red}{(69)}}}
+\[
+\frac{\partial\bsa^\top\bsx}{\partial\bsx}=\frac{\partial\bsx^\top\bsa}{\partial\bsx}=\frac{\partial}{\partial\bsx}(\bsx^\top\bsa)=\big(\frac{\partial}{\partial\bsx}\bsx^\top\big)(\bsa)=\bsa
+\]
+
+\paragraph{\Large\underline{proof of \textcolor{red}{(70)}}}
+\begin{align*}
+&\frac{\partial\bsa^\top\bfX\bsb}{\partial\bfX}=\frac{\partial}{\partial\bfX}\big(\bsa^\top\bfX\bsb\big)=\left[\frac{\partial}{\partial X_1},\dots,\frac{\partial}{\partial X_p}\right]\bsa^\top\left[X_1,\dots,X_p\right]\bsb \\
+&=\left[\frac{\partial}{\partial X_1},\dots,\frac{\partial}{\partial X_p}\right]\left[\bsa^\top X_1,\dots,\bsa^\top X_p\right]\bsb\\
+&=\left[\frac{\partial}{\partial X_1},\dots,\frac{\partial}{\partial X_p}\right]\left[\bsa^\top X_1,\dots,\bsa^\top X_p\right]\begin{bmatrix}b_1 \\ \dots \\ b_p\end{bmatrix}\\
+&=\left[\frac{\partial}{\partial X_1},\dots,\frac{\partial}{\partial X_p}\right]\sum_{j=1}^{p}\bsa^\top X_jb_j\\ 
+&=\left[\frac{\partial}{\partial X_1}\Big(\sum_{j=1}^{p}\bsa^\top X_jb_j\Big),\dots,\frac{\partial}{\partial X_p}\Big(\sum_{j=1}^{p}\bsa^\top X_jb_j\Big)\right]
+\end{align*}
+그런데 
+\[
+\frac{\partial}{\partial X_1}\Big(\sum_{j=1}^{p}\bsa^\top X_jb_j\Big)=\frac{\partial}{\partial X_1}\bsa^\top b_1X_1=\frac{\partial}{\partial X_1}X_1^\top b_1 \bsa=b_1\bsa
+\]
+이므로 
+\begin{align*}
+& \left[\frac{\partial}{\partial X_1}\Big(\sum_{j=1}^{p}\bsa^\top X_jb_j\Big),\dots,\frac{\partial}{\partial X_p}\Big(\sum_{j=1}^{p}\bsa^\top X_jb_j\Big)\right] \\ 
+&=\left[b_1\bsa,\dots,b_p\bsa\right]=\left[\bsa b_1,\dots,\bsa b_p\right]=\bsa\bsb^\top.
+\end{align*}
+
+\paragraph{\Large\underline{proof of \textcolor{red}{(71)}}}
+\[
+\frac{\partial\bsa^\top\bfX^\top\bsb}{\partial\bfX}=\frac{\partial\bsb^\top\bfX\bsa}{\partial\bfX}
+\]
+에서 공식 (70)을 쓰면 증명됨. 
+
+\paragraph{\Large\underline{proof of \textcolor{red}{(72)}}}
+생략.
+
+\paragraph{\Large\underline{proof of \textcolor{red}{(77)}}}
+\begin{align*}
+&\frac{\partial\bsb^\top\bfX^\top\bfX\bsc}{\partial\bfX}=\frac{\partial}{\partial\bfX}\bsb^\top\textcolor{red}{\bfX^\top}\bfX\bsc+\frac{\partial}{\partial\bfX}\bsb^\top\bfX^\top\textcolor{red}{\bfX}\bsc\\
+&=\frac{\partial}{\partial\bfX}\bsb^\top\textcolor{red}{\bfX^\top}\big(\bfX\bsc\big)+\frac{\partial}{\partial\bfX}\big(\bfX\bsb)^\top\textcolor{red}{\bfX}\bsc\\
+&=\big(\bfX\bsc\big)\bsb^\top+\big(\bfX\bsb\big)\bsc^\top=\bfX(\bsc\bsb^\top+\bsb\bsc^\top)
+\end{align*}
+
+\paragraph{\Large\underline{proof of \textcolor{red}{(78)}}}
+\begin{align*}
+& \frac{\partial(\bfB\bsx+\bsb)^\top\bfC(\bfD\bsx+\bsd)}{\partial \bsx}:=\frac{\partial\tilde\bsb^\top\bfC\tilde\bsd}{\partial \bsx}=\frac{\partial\textcolor{red}{\tilde\bsb^\top}\bfC\tilde\bsd}{\partial \bsx}+\frac{\partial\tilde\bsb^\top\bfC \textcolor{red}{\tilde\bsd}}{\partial \bsx}
+\end{align*}
+그런데
+\[
+\begin{cases}
+\frac{\partial\textcolor{red}{\tilde\bsb^\top}\bfC\tilde\bsd}{\partial \bsx}=
+\frac{\partial\textcolor{red}{\tilde\bsb^\top}}{\partial \bsx}(\bfC\tilde\bsd)=\frac{\partial\textcolor{red}{(\bfB\bsx+\bsb)^\top}}{\partial \bsx}(\bfC\tilde\bsd)=\frac{\partial\textcolor{red}{(\bsb^\top+\bsx^\top\bfB^\top)}}{\partial \bsx}(\bfC\tilde\bsd)=\bfB^\top\bfC\tilde\bsd
+ \\ 
+\frac{\partial\tilde\bsb^\top\bfC \textcolor{red}{\tilde\bsd}}{\partial \bsx}=\frac{\partial\textcolor{red}{\tilde\bsd^\top}}{\partial \bsx}(\bfC^\top\tilde\bsb)=\frac{\partial\textcolor{red}{(\bfD\bsx+\bsd)^\top}}{\partial \bsx}(\bfC^\top\tilde\bsb)=\frac{\partial\textcolor{red}{(\bsd^\top+\bsx^\top\bfD^\top)}}{\partial \bsx}(\bfC^\top\tilde\bsb)=\bfD^\top\bfC^\top\tilde\bsb
+\end{cases}
+\]
+이므로 
+\begin{align*}
+& \frac{\partial(\bfB\bsx+\bsb)^\top\bfC(\bfD\bsx+\bsd)}{\partial \bsx}=\bfB^\top\bfC\tilde\bsd+\bfD^\top\bfC^\top\tilde\bsb \\
+& =\bfB^\top\bfC(\bfD\bsx+\bsd)+\bfD^\top\bfC^\top(\bfB\bsx+\bsb)
+\end{align*}
+
+\paragraph{\Large\underline{proof of \textcolor{red}{(81)}}}
+\[
+\frac{\partial\bsx^\top\bfB\bsx}{\partial \bsx}=
+\frac{\partial\textcolor{red}{\bsx^\top}\bfB\bsx}{\partial \bsx}+\frac{\partial\bsx^\top\bfB\textcolor{red}{\bsx}}{\partial \bsx}=
+\frac{\partial\textcolor{red}{\bsx^\top}\bfB\bsx}{\partial \bsx}+\frac{\partial\textcolor{red}{\bsx^\top}\bfB^\top\bsx}{\partial \bsx}=(\bfB+\bfB^\top)\bsx
+\]
+
+\paragraph{\Large\underline{proof of \textcolor{red}{(82)}}}
+\begin{align*}
+&\frac{\partial\bsb^\top\bfX^\top\bfD\bfX\bsc}{\partial \bsX}=
+\frac{\partial\bsb^\top\textcolor{red}{\bfX^\top}\bfD\bfX\bsc}{\partial \bsX}+\frac{\partial\bsb^\top\bfX^\top\bfD\textcolor{red}{\bfX}\bsc}{\partial \bsX}
+\end{align*}
+공식 (70)-(71)을 쓰면
+\[
+\begin{cases}
+\frac{\partial\bsb^\top\textcolor{red}{\bfX^\top}\bfD\bfX\bsc}{\partial \bsX}=\bfD\bfX\bsc\bsb^\top \\
+\frac{\partial\bsb^\top\bfX^\top\bfD\textcolor{red}{\bfX}\bsc}{\partial \bsX}=\bfD^\top\bfX\bsb\bsc^\top
+\end{cases}
+\]
+따라서 
+\[
+\frac{\partial\bsb^\top\textcolor{red}{\bfX^\top}\bfD\bfX\bsc}{\partial \bsX}+\frac{\partial\bsb^\top\bfX^\top\bfD\textcolor{red}{\bfX}\bsc}{\partial \bsX}=\bfD\bfX\bsc\bsb^\top+\bfD^\top\bfX\bsb\bsc^\top.
+\]
+
+\paragraph{\Large\underline{proof of \textcolor{red}{(83)}}}
+\begin{align*}
+&\frac{\partial(\bfX\bsb+\bsc)^\top\bfD(\bfX\bsb+\bsc)}{\partial \bfX}\\
+&=\frac{\partial(\textcolor{red}{\bfX}\bsb+\bsc)^\top\bfD(\bfX\bsb+\bsc)}{\partial \bfX}+\frac{\partial(\bfX\bsb+\bsc)^\top\bfD(\textcolor{red}{\bfX}\bsb+\bsc)}{\partial \bfX}\\
+&=\frac{\partial(\textcolor{red}{\bfX}\bsb+\bsc)^\top\bfD(\bfX\bsb+\bsc)}{\partial \bfX}+\frac{\partial(\textcolor{red}{\bfX}\bsb+\bsc)^\top\bfD^\top(\bfX\bsb+\bsc)}{\partial \bfX}:=(a)+(b)
+\end{align*}
+그런데
+\begin{align*}
+&(a)=\frac{\partial(\textcolor{red}{\bfX}\bsb+\bsc)^\top\bfD(\bfX\bsb+\bsc)}{\partial \bfX}=\frac{\partial(\bsc^\top+\bsb^\top\textcolor{red}{\bfX}^\top)\bfD(\bfX\bsb+\bsc)}{\partial \bfX}\\
+&=\frac{\partial}{\partial \bfX}(\bsb^\top)\textcolor{red}{\bfX}^\top(\bfD(\bfX\bsb+\bsc))=\bfD(\bfX\bsb+\bsc)\bsb^\top
+\end{align*}
+마지막 등호가 성립하는 이유는 공식 (71)때문이다. 동일한 논리로
+\[
+(b)=\bfD^\top(\bfX\bsb+\bsc)\bsb^\top
+\]
+이므로 아래가 성립한다. 
+\[
+\frac{\partial(\bfX\bsb+\bsc)^\top\bfD(\bfX\bsb+\bsc)}{\partial \bfX}=(\bfD+\bfD^\top)(\bfX\bsb+\bsc)\bsb^\top
+\]
+\subsubsection{대칭행렬이 있을때}
+\subsubsection{trace}
+
+\dash 
+
+\section{주성분분석}
+
+\ck 행렬의 곱, 미분, 분해등을 연습하기에 좋은 소재.
+
+\subsection{유도과정}
+\ck 아래와 같은 변환 $\hat{\bfV}$를 생각하자. 
+\[
+\bfZ=\bfX\hat{\bfV}
+\]
+변환 $\hat{\bfV}$는 차원축소변환인데 아래와 같은 성질이 있음이 재미있다. 
+\begin{align*}
+& \bfX\hat{\bfV}\hat{\bfV}^\top = \hat\bfX \\ 
+& \bfZ\hat{\bfV}^\top\hat{\bfV} = \bfZ \\
+& \hat\bfX\hat{\bfV}=\bfZ
+\end{align*}
+위에서 첫번째 수식이 의미하는것은 차원축소변환이후 reconstruction을 하는 과정을 의미한다. 두번째수식은 $\bfZ$가 $\bfX$의 정사영임을 나타내는 수식이다. 세번째 수식은 reconstruction에 다시 변환을 취하면 $\bfZ$가 그대로 나온다는 것을 의미한다. 
+
+\note 여기에서 $\hat{\bfV}$의 차원이 $p\times q$, $p\leq q$ 이므로 일반적으로 $\hat{\bfV}$는 정사각행렬이 아니다. $\hat{\bfV}$가 정사각행렬인 경우는 $\bfV$ 라고 쓰기로 하자. 이 경우 행렬 $\bfX$에 변환 $\bfV$를 취하는 경우는 차원축소를 하지 않는 경우이다. 
+
+\ck 따라서 $\hat{\bfV}^\top\hat{\bfV}=\bfI$ 이지만 $\hat{\bfV}\hat{\bfV}^\top=\bfI$ 이어야 하는 것은 아니다. 다만 $\hat{\bfV}=\bfV$인 경우에는 $\bfV^\top\bfV=\bfV\bfV^\top=\bfI$ 가 성립한다. 
+
+\ck 우리의 목적은 아래를 푸는것이다. 
+\[
+\argmin_{\hat{\bf V}^\top}\left\{\sum_{i=1}^{n}\left\|\bfz_i\hat{\bf V}^\top-\bfx_i \right\|^2\right\} \quad \mbox{subject to } \hat{\bf V}^\top \hat{\bf V}=\bfI
+\]
+이때 
+\[
+\sum_{i=1}^{n}\left\|\bfz_i\hat{\bf V}^\top-\bfx_i \right\|^2 = -\bf{tr}(\bf\hat{V}^\top\bfX^\top\bfX\hat{\bfV})+\bf{tr}(\bfX^\top\bfX)
+\]
+인데 $\bf tr(X^\top X)$은 $\hat\bfV$에 대하여 상수이므로 결국 아래를 푸는 것과 같다. 
+\[
+\argmax_{\hat{\bf V}^\top}\left\{\bf tr(\hat{V}^\top X^\top X \hat{V})\right\} \quad \mbox{subject to } \hat{\bf V}^\top \hat{\bf V}=\bfI
+\]
+
+\note $\bfZ=\bfX\hat{\bfV}$가 성립하므로 주어진 최적화조건을 아래와 같이 표현할 수도 있다. 
+\[
+\argmax_{\hat{\bf V}}\Big\{\bf tr(Z^\top Z)\Big\} \quad \mbox{subject to } \hat{\bf V}^\top \hat{\bf V}=\bfI
+\]
+그래서 보통 주성분분석은 \textbf{변환된 자료 $\bfZ$의 분산을 최대화하는 직교행렬 $\hat{\bf V}$을 찾는 과정}이라 표현한다.
+
+\ck 이때 
+\[
+\argmax_{\hat{\bf V}}\left\{\bf tr(\hat{V}^\top X^\top X \hat{V})\right\} \quad \mbox{subject to } \hat{\bf V}^\top \hat{\bf V}=\bfI
+\]
+편의상 $p'=2$로 가정하면 아래와 같이 쓸 수 있다. 
+\[
+\argmax_{\hat{V}_1,\hat{V}_2}\left\{\sum_{j=1}^{2}\hat{V}_j^\top\bfX^\top\bfX\hat{V}_j\right\} \quad \mbox{subject to $
+\begin{cases}
+\hat{V}_1^\top \hat{V}_1^2=1, \hat{V}_2^\top \hat{V}_2^2=1 \\ 
+\hat{V}_1^\top \hat{V}_2^2=0, \hat{V}_2^\top \hat{V}_1^2=0
+\end{cases}$.} 
+\]
+이때 라그랑주 $\cal L$은 아래와 같이 설정할 수 있다. 
+\begin{align*}
+&{\cal L}=\sum_{j=1}^{p'}\hat{V}_j^\top\bfX^\top\bfX\hat{V}_j+\sum_{j=1}^{p'}\hat{\lambda}_{jj}(\hat{V}_j^2-1)+\sum_{i\neq j }\hat{\lambda}_{ij}\hat{V}_i\hat{V}_j\\
+&=\sum_{j=1}^{2}\hat{V}_j^\top\bfX^\top\bfX\hat{V}_j+\hat{\lambda}_{11}(\hat{V}_1^\top \hat{V}_1-1)+\hat{\lambda}_{22}(\hat{V}_2^\top \hat{V}_2-1)+\hat{\lambda}_{12}\hat{V}_1^\top \hat{V}_2+\hat{\lambda}_{21}\hat{V}_2^\top \hat{V}_1
+\end{align*}
+아래가 성립함을 관찰하라. 
+\begin{align*}
+&\hat{\bs{\Lambda}}(\hat{\bf V}^\top \hat{\bf V}-\bfI)=
+\begin{bmatrix}
+\hat\lambda_{11} & \hat\lambda_{12} \\
+\hat\lambda_{21} & \hat\lambda_{22} 
+\end{bmatrix}
+\left(
+\begin{bmatrix}
+\hat{V}_1^\top\hat{V}_1 & \hat{V}_1^\top\hat{V}_2  \\
+\hat{V}_2^\top\hat{V}_1  & \hat{V}_2^\top\hat{V}_2
+\end{bmatrix}
+-\begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix}
+\right)\\
+&=\begin{bmatrix}
+\hat\lambda_{11} & \hat\lambda_{12} \\
+\hat\lambda_{21} & \hat\lambda_{22} 
+\end{bmatrix}
+\begin{bmatrix}
+\hat{V}_1^\top\hat{V}_1-1 & \hat{V}_1^\top\hat{V}_2  \\
+\hat{V}_2^\top\hat{V}_1  & \hat{V}_2^\top\hat{V}_2-1
+\end{bmatrix}\\
+&=\begin{bmatrix}
+\hat\lambda_{11}(\hat{V}_1^\top\hat{V}_1-1) +\hat\lambda_{12} \hat{V}_2^\top\hat{V}_1 & ??  \\
+??  & \hat\lambda_{22}(\hat{V}_2^\top\hat{V}_2-1) +\hat\lambda_{21} \hat{V}_1^\top\hat{V}_2
+\end{bmatrix}
+\end{align*}
+따라서 
+\begin{align*}
+& {\bf tr}\big(\hat{\bs{\Lambda}}(\hat{\bf V}^\top \hat{\bf V}-\bfI)\big)\\
+&=\hat{\lambda}_{11}(\hat{V}_1^\top \hat{V}_1-1)+\hat{\lambda}_{22}(\hat{V}_2^\top \hat{V}_2-1)+\hat{\lambda}_{12}\hat{V}_2^\top \hat{V}_1+\hat{\lambda}_{21}\hat{V}_1^\top \hat{V}_2 \\
+&=\hat{\lambda}_{11}(\hat{V}_1^\top \hat{V}_1-1)+\hat{\lambda}_{22}(\hat{V}_2^\top \hat{V}_2-1)+\hat{\lambda}_{12}\hat{V}_1^\top \hat{V}_2+\hat{\lambda}_{21}\hat{V}_2^\top \hat{V}_1
+\end{align*}
+이다. (마지막 등호는 식을 예쁘게 하기 위해서 $\hat{V}_2^\top \hat{V}_1=\hat{V}_1^\top \hat{V}_2$를 사용함.)
+결국 $\cal L$을 매트릭스버전으로 쓰면 아래와 같이 정리할 수 있다. 
+\[
+{\cal L}:=\bf{tr}\big(\bf \hat{V}^\top X^\top X\hat{V}\big)-tr\big(\hat{\Lambda}(\hat{V}^\top\hat{V}-I)\big)
+\]
+
+\note 이때 $\hat{V}_1^\top \hat{V}_2=\hat{V}_2^\top \hat{V}_1$ 이므로 $\hat\lambda_{12}=\hat\lambda_{21}$으로 보아도 무방함을 기억하자. 즉 $\hat{\bs{\Lambda}}$ 를 대칭행렬로 생각할 수 있음에 주목하자!!
+
+
+\ck 따라서 
+\[
+\argmax_{\hat{\bf V}}\left\{\bf tr(\hat{V}^\top X^\top X \hat{V})\right\} \quad \mbox{subject to } \hat{\bf V}^\top \hat{\bf V}=\bfI
+\]
+를 풀기 위해서는 아래의 식을 연립하여 풀면 된다.
+\begin{align*}
+(1): &~ \frac{\partial}{\partial \hat{\mbox{$\bf V$}}} \bigg\{\bf{tr}\big(\bf \hat{V}^\top X^\top X\hat{V}\big)-tr\big(\hat{\Lambda}(\hat{V}^\top\hat{V}-I)\big)\bigg\} =\bfO \\
+(2): &~ \frac{\partial}{\partial \hat{\mbox{$\bf\Lambda$}}} \bigg\{\bf{tr}\big(\bf \hat{V}^\top X^\top X\hat{V}\big)-tr\big(\hat{\Lambda}(\hat{V}^\top\hat{V}-I)\big)\bigg\} =\bfO 
+\end{align*}
+
+\note 라그랑주 상수와 고유치의 기호가 모두 $\lambda$로 겹친다. (그래서 일단 현재는 라그랑주 상수의 고유치기호는 $\hat{\bs{\Lambda}}$로 표현하기는 했다.) 하지만 나중에 보면 알겠지만 $\hat{\bs{\Lambda}}$는 결국 $\bs{\Lambda}$의 truncated version이 된다. 
+
+\ck (a)-(d)가 성립한다. (증명은 뒷쪽에 있음)
+
+\cka $\frac{\partial}{\partial \hat\bfV} \bf{tr}(\bf \hat{V}^\top X^\top X\hat{V})=2\bfX^\top\bfX\hat{\bfV}$
+
+\ckb $\frac{\partial}{\partial \hat\bfV} \bf tr\big(\hat{\Lambda}(\hat{V}^\top\hat{V}-I)\big)=2\hat{\bfV}\hat{\bs{\Lambda}}$
+
+\ckc $\frac{\partial}{\partial \hat{\mbox{$\bf\Lambda$}}}\bf{tr}(\bf \hat{V}^\top X^\top X\hat{V})=\bfO$
+
+\ckd $\frac{\partial}{\partial \hat{\mbox{$\bf\Lambda$}}}\bf tr\big(\hat{\Lambda}(\hat{V}^\top\hat{V}-I)\big)=\hat{\bf V}^\top \hat{\bf V} -\bfI$
+
+\ck 따라서 결국 아래를 연립하면 된다. 
+\begin{align*}
+(1): &~ \bfX^\top\bfX \hat{\bfV}=\hat{\bs{\Lambda}}\hat\bfV \\
+(2): &~ \hat{\bf V}^\top\hat{\bf V}^\top =\bfI 
+\end{align*}
+즉 (1)-(2)를 만족하는 $(\hat\bfV,\hat{\bs{\Lambda}})$를 구하면 된다. 그런데 식을 잘 살펴보면 $(\hat\bfV,\hat{\bs{\Lambda}})$를 구하기 위해서는 결국 $\bfX^\top\bfX$의 고유치분해 
+\[
+\bfX^\top\bfX=\bs{\Psi} \bs{\Lambda}\bs{\Psi}^\top=\bfV \bs{\Lambda}\bfV^\top
+\]
+를 구한 뒤에 뒷쪽의 $(p-p')$의 고유치, 고유벡터를 삭제하여 $(\hat\bfV,\hat{\bs{\Lambda}})$를 구하면 됨을 알 수 있다. 즉 
+\begin{align*}
+\hat\bfV ~:=~ &\mbox{\it$\bfX^\top\bfX$의 고유벡터행렬 $\bfV$에서 $(p-p')$개의 고유벡터를 삭제한것.} \\
+\hat{\bs{\Lambda}}~:=~& \mbox{\it$\bfX^\top\bfX$의 고유값행렬 $\bs{\Lambda}$에서 $(p-p')$개의 고유값을 삭제한것.} 
+\end{align*}
+임을 알 수 있다. 
+
+
+\paragraph{\Large\underline{proof of \textcolor{red}{(a)}}} 
+\[
+\frac{\partial}{\partial \hat\bfV} \bf{tr}(\bf \hat{V}^\top X^\top X\hat{V})=\frac{\partial}{\partial \hat\bfV} \bf{tr}(\bfZ^\top\bfZ)
+\]
+우선 아래를 관찰하자. 
+\[
+\begin{cases}
+{\bf tr(Z^\top Z)}=\sum_{j=1}^{p'} Z_j^\top Z_j\\
+\bfZ=\bfX\hat{\bfV}=\bfX[\hat{V}_1,\dots,\hat{V}_{p'}] \Longrightarrow Z_j=\bfX \hat{V}_j
+\end{cases}
+\] 
+따라서 
+\[
+{\bf tr(Z^\top Z)}=\sum_{j=1}^{p'}\hat{V}_j^\top\bfX^\top\bfX \hat{V}_j
+\]
+그런데 
+\[
+\frac{\partial}{\partial \hat{\bfV}}=\left[\frac{\partial}{\partial \hat{V}_1},\dots,\frac{\partial}{\partial\hat{V}_{p'}}\right]
+\]
+이므로 
+\begin{align*}
+&\frac{\partial}{\partial \hat{\bfV}}{\bf tr(Z^\top Z)}=\left[\frac{\partial}{\partial \hat{V}_1}\sum_{j=1}^{p'}\hat{V}_j^\top\bfX^\top\bfX \hat{V}_j,\dots,\frac{\partial}{\partial\hat{V}_{p'}}\sum_{j=1}^{p'}\hat{V}_j^\top\bfX^\top\bfX \hat{V}_j\right]\\
+&=\left[\frac{\partial \hat{V}_1^\top\bfX^\top\bfX \hat{V}_1}{\partial \hat{V}_1},\dots,\frac{\partial \hat{V}_{p'}^\top\bfX^\top\bfX \hat{V}_{p'}}{\partial\hat{V}_{p'}}\right]
+\end{align*}
+그런데 
+\begin{align*}
+\frac{\partial \hat{V}_1^\top\bfX^\top\bfX \hat{V}_1}{\partial \hat{V}_1}=\frac{\partial}{\partial \hat{V}_1}\textcolor{red}{\hat{V}_1^\top}\bfX^\top\bfX \hat{V}_1+\frac{\partial}{\partial \hat{V}_1}\hat{V}_1^\top\bfX^\top\bfX \textcolor{red}{\hat{V}_1}=2\bfX^\top\bfX \hat{V}_1
+\end{align*}
+이므로 
+\begin{align*}
+&\left[\frac{\partial \hat{V}_1^\top\bfX^\top\bfX \hat{V}_1}{\partial \hat{V}_1},\dots,\frac{\partial \hat{V}_{p'}^\top\bfX^\top\bfX \hat{V}_{p'}}{\partial\hat{V}_{p'}}\right]=2\left[\bfX^\top\bfX \hat{V}_1,\dots,\bfX^\top\bfX \hat{V}_{p'}\right]=2\bfX^\top\bfX\hat{\bfV}
+\end{align*}
+결국 
+\[
+\frac{\partial}{\partial \hat\bfV} \bf{tr}(\bf \hat{V}^\top X^\top X\hat{V})=2\bfX^\top\bfX\hat{\bfV}.
+\]
+
+\paragraph{\Large\underline{proof of \textcolor{red}{(b)}}} 
+
+\begin{align*}
+&\frac{\partial}{\partial \hat\bfV} {\bf tr\big(\hat{\Lambda}(\hat{V}^\top\hat{V}-I)\big)}=\frac{\partial}{\partial \hat\bfV} {\bf tr\big(\hat{\Lambda}\hat{V}^\top\hat{V}-\hat{\Lambda}I\big)}=\frac{\partial}{\partial \hat\bfV} {\bf tr\big(\hat{\Lambda}\hat{V}^\top\hat{V}\big)}\\
+&=\frac{\partial}{\partial \hat\bfV} {\bf tr\big(\hat{V}\hat{\Lambda}\hat{V}^\top\big)}=\frac{\partial}{\partial \hat\bfV} {\bf tr}\left(\hat{\bfV}[\hat{\bs{\Lambda}}\hat\bfv_1^\top,\dots,\hat{\bs{\Lambda}}\hat\bfv_{p'}^\top]\right)\\
+&=\frac{\partial}{\partial \hat\bfV} {\bf tr}\left(
+\begin{bmatrix}
+\hat \bfv_1 \hat{\bs{\Lambda}}\hat\bfv_1^\top & \dots & \hat\bfv_1\hat{\bs{\Lambda}}\hat\bfv_{p'}^\top \\
+\dots & \dots & \dots \\
+\hat\bfv_{p'} \hat{\bs{\Lambda}}\hat\bfv_1^\top & \dots & \hat\bfv_{p'}\hat{\bs{\Lambda}}\hat\bfv_{p'}^\top 
+\end{bmatrix}\right)=\frac{\partial}{\partial \hat\bfV} \sum_{i=1}^{p'}\hat\bfv_i\hat{\bs{\Lambda}}\hat\bfv_i^\top
+\end{align*}
+편의상 $i=1$이라고 가정하자.
+\[
+\frac{\partial}{\partial \hat\bfV} \hat\bfv_1\hat{\bs{\Lambda}}\hat\bfv_1^\top=
+\begin{bmatrix}
+\frac{\partial}{\partial\hat\bfv_1} \\
+\dots\\
+\frac{\partial}{\partial\hat\bfv_{p'}}
+\end{bmatrix}\hat\bfv_1 \hat{\bs{\Lambda}}\hat\bfv_{1}^\top=\begin{bmatrix}
+\frac{\partial \hat\bfv_1\hat{\bs{\Lambda}}\hat\bfv_{1}^\top}{\partial\hat\bfv_1} \\
+\dots\\
+{\bf 0}
+\end{bmatrix}
+\]
+그런데 
+\begin{align*}
+&\frac{\partial \hat\bfv_1\hat{\bs{\Lambda}}\hat\bfv_{1}^\top}{\partial\hat\bfv_1}=
+\frac{\partial}{\partial\hat\bfv_1} \textcolor{red}{\hat\bfv_1}\hat{\bs{\Lambda}}\hat\bfv_{1}^\top+\frac{\partial}{\partial\hat\bfv_1} \hat\bfv_1\hat{\bs{\Lambda}}\textcolor{red}{\hat\bfv_{1}^\top}\\
+&=\left(\frac{\partial}{\partial\hat\bfv_1^\top} \textcolor{red}{\hat\bfv_1}\hat{\bs{\Lambda}}\hat\bfv_{1}^\top\right)^\top+\left(\frac{\partial}{\partial\hat\bfv_1^\top} \hat\bfv_1\hat{\bs{\Lambda}}\textcolor{red}{\hat\bfv_{1}^\top}\right)^\top \\
+&=\left(\frac{\partial}{\partial\hat\bfv_1^\top} \textcolor{red}{\hat\bfv_1}\hat{\bs{\Lambda}}\hat\bfv_{1}^\top\right)^\top+\left(\frac{\partial}{\partial\hat\bfv_1^\top} \textcolor{red}{\hat\bfv_1}\hat{\bs{\Lambda}}\hat\bfv_{1}^\top\right)^\top \\
+&=2\left({\bf \hat{\Lambda}}\hat\bfv_1^\top\right)^\top=2\hat\bfv_1 {\bf \hat{\Lambda}}^\top=2\hat\bfv_1\hat{\bs{\Lambda}}
+\end{align*}
+이므로 
+\[
+\frac{\partial}{\partial \hat\bfV} \hat\bfv_1\hat{\bs{\Lambda}}\hat\bfv_1^\top=\begin{bmatrix}
+2\hat\bfv_1\hat{\bs{\Lambda}} \\
+{\bf 0} \\
+\dots\\
+{\bf 0}
+\end{bmatrix}
+\]
+동일한 논리로 아래가 성립한다. 
+\[
+\frac{\partial}{\partial \hat\bfV} \hat\bfv_2\hat{\bs{\Lambda}}\hat\bfv_2^\top=\begin{bmatrix}
+{\bf 0} \\
+2\hat\bfv_2\hat{\bs{\Lambda}}\\
+\dots\\
+{\bf 0}
+\end{bmatrix}
+\]
+따라서 
+\[
+\sum_{i=1}^{p'}\hat\bfv_i\hat{\bs{\Lambda}}\bfv_i^\top=\begin{bmatrix}
+2\hat\bfv_1\hat{\bs{\Lambda}} \\
+2\hat\bfv_2\hat{\bs{\Lambda}} \\
+\dots\\
+2\hat\bfv_{p'}\hat{\bs{\Lambda}}
+\end{bmatrix}=2\hat\bfV\hat{\bs{\Lambda}}
+\]
+
+
+\paragraph{\Large\underline{proof of \textcolor{red}{(c)}}} 
+자명함.
+\paragraph{\Large\underline{proof of \textcolor{red}{(d)}}} 
+\begin{align*}
+\frac{\partial}{\partial \hat{\mbox{$\bf\Lambda$}}} {\bf tr\big(\hat{\Lambda}(\hat{V}^\top\hat{V}-I)\big)}=\frac{\partial}{\partial \hat{\mbox{$\bf\Lambda$}}} {\bf tr\big(\hat{\Lambda}\hat{V}^\top\hat{V}-\hat{\Lambda}I\big)}
+\end{align*}
+(b)의 증명과정을 참고하면 아래와 같이 표현가능하다. 
+\[
+\frac{\partial}{\partial \hat{\mbox{$\bf\Lambda$}}} {\bf tr\big(\hat{\Lambda}\hat{V}^\top\hat{V}\big)}=\frac{\partial}{\partial \hat{\mbox{$\bf\Lambda$}}} {\bf tr\big(\hat{V}\hat{\Lambda}\hat{V}^\top\big)}=\sum_{i=1}^{p'}\frac{\partial}{\partial \hat{\mbox{$\bf\Lambda$} }} \left(\hat\bfv_i^\top\hat{\bs{\Lambda}}\hat\bfv_i\right)
+\]
+매트릭스 쿡북 공식 (72)을 참고하면 
+\[
+\sum_{i=1}^{p'}\frac{\partial}{\partial \hat{\mbox{$\bf\Lambda$} }} \left(\hat\bfv_i^\top\hat{\bs{\Lambda}}\hat\bfv_i\right)=\sum_{i=1}^{p'}\hat\bfv_i\hat\bfv_i^\top=\hat{\bf V}^\top\hat\bfV
+\]
+한편 
+\[
+\frac{\partial}{\partial \hat{\mbox{$\bf\Lambda$}}} {\bf tr\big(\hat{\Lambda}I\big)}=\bfI
+\]
+이므로 
+\begin{align*}
+\frac{\partial}{\partial \hat{\mbox{$\bf\Lambda$}}} {\bf tr\big(\hat{\Lambda}(\hat{V}^\top\hat{V}-I)\big)}=\hat{\bf V}^\top \hat{\bf V} -\bfI.
+\end{align*}
+
+\subsection{자유로운 변환}
+
+\end{document}
+

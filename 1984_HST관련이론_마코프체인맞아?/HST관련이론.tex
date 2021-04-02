@@ -1,0 +1,277 @@
+\documentclass[12pt,oneside,english,a4paper]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{wallpaper}
+\usepackage{wrapfig,booktabs}
+
+\usepackage{fancyhdr}
+
+\usepackage{fourier-orns}
+\newcommand{\dash}{\noindent \newline\textcolor{black}{\hrulefill~ \raisebox{-2.5pt}[10pt][10pt]{\leafright \decofourleft \decothreeleft  \aldineright \decotwo \floweroneleft \decoone   \floweroneright \decotwo \aldineleft\decothreeright \decofourright \leafleft} ~  \hrulefill}}
+
+\usepackage{titlesec}
+\titleformat*{\section}{\it\huge\bfseries}
+\titleformat*{\subsection}{\it\huge\bfseries}
+\titleformat*{\subsubsection}{\it\LARGE\bfseries}
+\titleformat*{\paragraph}{\huge\bfseries}
+\titleformat*{\subparagraph}{\LARGE\bfseries}
+
+\usepackage[left=20px,right=20px,top=50px,bottom=50px,paperwidth=8in,paperheight=12in]{geometry}
+
+
+\usepackage[cjk]{kotex}
+
+\usepackage{amsthm} 
+\usepackage{amsmath} 
+\usepackage{amsfonts}
+\usepackage{enumerate} 
+\usepackage{cite}
+\usepackage{graphics} 
+\usepackage{graphicx,lscape} 
+\usepackage{subcaption}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{titlesec}
+\usepackage{cite, url}
+\usepackage{amssymb}
+
+\def\bk{\paragraph{\large$$}\large}
+\def\ck{\paragraph{\large$\bullet$}\large}
+\def\pf{\paragraph{\large(pf)}\large}
+\def\note{\paragraph{\large\textit{\underline{note:}}}\large}
+\def\ex{\paragraph{\large\textit{example:}}\large}
+\newcommand{\para}[1]{\paragraph{\large\it\underline{\textbf{#1:}}}\large}
+\newcommand{\parablue}[1]{\paragraph{\large\textcolor{blue}{\it\underline{\textbf{#1:}}}}\large}
+\newcommand{\parared}[1]{\paragraph{\large\textcolor{red}{\it\underline{\textbf{#1:}}}}\large}
+\newcommand{\paraviolet}[1]{\paragraph{\large\textcolor{violet}{\it\underline{\textbf{#1:}}}}\large}
+\newcommand{\paraorange}[1]{\paragraph{\large\textcolor{orange}{\it\underline{\textbf{#1:}}}}\large}
+
+
+
+\newcommand{\bs}[1]{\mbox{\boldmath $#1$}}
+
+\newcommand{\bsa}{\mbox{\boldmath $a$}}
+\newcommand{\bsb}{\mbox{\boldmath $b$}}
+\newcommand{\bsc}{\mbox{\boldmath $c$}}
+\newcommand{\bsd}{\mbox{\boldmath $d$}}
+\newcommand{\bse}{\mbox{\boldmath $e$}}
+\newcommand{\bsf}{\mbox{\boldmath $f$}}
+\newcommand{\bsg}{\mbox{\boldmath $g$}}
+\newcommand{\bsh}{\mbox{\boldmath $h$}}
+\newcommand{\bsi}{\mbox{\boldmath $i$}}
+\newcommand{\bsj}{\mbox{\boldmath $j$}}
+\newcommand{\bsk}{\mbox{\boldmath $k$}}
+\newcommand{\bsl}{\mbox{\boldmath $l$}}
+\newcommand{\bsm}{\mbox{\boldmath $m$}}
+\newcommand{\bsn}{\mbox{\boldmath $n$}}
+\newcommand{\bso}{\mbox{\boldmath $o$}}
+\newcommand{\bsp}{\mbox{\boldmath $p$}}
+\newcommand{\bsq}{\mbox{\boldmath $q$}}
+\newcommand{\bsr}{\mbox{\boldmath $r$}}
+\newcommand{\bss}{\mbox{\boldmath $s$}}
+\newcommand{\bst}{\mbox{\boldmath $t$}}
+\newcommand{\bsu}{\mbox{\boldmath $u$}}
+\newcommand{\bsv}{\mbox{\boldmath $v$}}
+\newcommand{\bsw}{\mbox{\boldmath $w$}}
+\newcommand{\bsx}{\mbox{\boldmath $x$}}
+\newcommand{\bsy}{\mbox{\boldmath $y$}}
+\newcommand{\bsz}{\mbox{\boldmath $z$}}
+
+\newcommand{\bfa}{\mbox{$\bf{a}$}}
+\newcommand{\bfb}{\mbox{$\bf{b}$}}
+\newcommand{\bfc}{\mbox{$\bf{c}$}}
+\newcommand{\bfd}{\mbox{$\bf{d}$}}
+\newcommand{\bfe}{\mbox{$\bf{e}$}}
+\newcommand{\bff}{\mbox{$\bf{f}$}}
+\newcommand{\bfg}{\mbox{$\bf{g}$}}
+\newcommand{\bfh}{\mbox{$\bf{h}$}}
+\newcommand{\bfi}{\mbox{$\bf{i}$}}
+\newcommand{\bfj}{\mbox{$\bf{j}$}}
+\newcommand{\bfk}{\mbox{$\bf{k}$}}
+\newcommand{\bfl}{\mbox{$\bf{l}$}}
+\newcommand{\bfm}{\mbox{$\bf{m}$}}
+\newcommand{\bfn}{\mbox{$\bf{n}$}}
+\newcommand{\bfo}{\mbox{$\bf{o}$}}
+\newcommand{\bfp}{\mbox{$\bf{p}$}}
+\newcommand{\bfq}{\mbox{$\bf{q}$}}
+\newcommand{\bfr}{\mbox{$\bf{r}$}}
+\newcommand{\bfs}{\mbox{$\bf{s}$}}
+\newcommand{\bft}{\mbox{$\bf{t}$}}
+\newcommand{\bfu}{\mbox{$\bf{u}$}}
+\newcommand{\bfv}{\mbox{$\bf{v}$}}
+\newcommand{\bfw}{\mbox{$\bf{w}$}}
+\newcommand{\bfx}{\mbox{$\bf{x}$}}
+\newcommand{\bfy}{\mbox{$\bf{y}$}}
+\newcommand{\bfz}{\mbox{$\bf{z}$}}
+
+\newcommand{\bsA}{\mbox{\boldmath $A$}}
+\newcommand{\bsB}{\mbox{\boldmath $B$}}
+\newcommand{\bsC}{\mbox{\boldmath $C$}}
+\newcommand{\bsD}{\mbox{\boldmath $D$}}
+\newcommand{\bsE}{\mbox{\boldmath $E$}}
+\newcommand{\bsF}{\mbox{\boldmath $F$}}
+\newcommand{\bsG}{\mbox{\boldmath $G$}}
+\newcommand{\bsH}{\mbox{\boldmath $H$}}
+\newcommand{\bsI}{\mbox{\boldmath $I$}}
+\newcommand{\bsJ}{\mbox{\boldmath $J$}}
+\newcommand{\bsK}{\mbox{\boldmath $K$}}
+\newcommand{\bsL}{\mbox{\boldmath $L$}}
+\newcommand{\bsM}{\mbox{\boldmath $M$}}
+\newcommand{\bsN}{\mbox{\boldmath $N$}}
+\newcommand{\bsO}{\mbox{\boldmath $O$}}
+\newcommand{\bsP}{\mbox{\boldmath $P$}}
+\newcommand{\bsQ}{\mbox{\boldmath $Q$}}
+\newcommand{\bsR}{\mbox{\boldmath $R$}}
+\newcommand{\bsS}{\mbox{\boldmath $S$}}
+\newcommand{\bsT}{\mbox{\boldmath $T$}}
+\newcommand{\bsU}{\mbox{\boldmath $U$}}
+\newcommand{\bsV}{\mbox{\boldmath $V$}}
+\newcommand{\bsW}{\mbox{\boldmath $W$}}
+\newcommand{\bsX}{\mbox{\boldmath $X$}}
+\newcommand{\bsY}{\mbox{\boldmath $Y$}}
+\newcommand{\bsZ}{\mbox{\boldmath $Z$}}
+
+\newcommand{\bfA}{\mbox{$\bf{A}$}}
+\newcommand{\bfB}{\mbox{$\bf{B}$}}
+\newcommand{\bfC}{\mbox{$\bf{C}$}}
+\newcommand{\bfD}{\mbox{$\bf{D}$}}
+\newcommand{\bfE}{\mbox{$\bf{E}$}}
+\newcommand{\bfF}{\mbox{$\bf{F}$}}
+\newcommand{\bfG}{\mbox{$\bf{G}$}}
+\newcommand{\bfH}{\mbox{$\bf{H}$}}
+\newcommand{\bfI}{\mbox{$\bf{I}$}}
+\newcommand{\bfJ}{\mbox{$\bf{J}$}}
+\newcommand{\bfK}{\mbox{$\bf{K}$}}
+\newcommand{\bfL}{\mbox{$\bf{L}$}}
+\newcommand{\bfM}{\mbox{$\bf{M}$}}
+\newcommand{\bfN}{\mbox{$\bf{N}$}}
+\newcommand{\bfO}{\mbox{$\bf{O}$}}
+\newcommand{\bfP}{\mbox{$\bf{P}$}}
+\newcommand{\bfQ}{\mbox{$\bf{Q}$}}
+\newcommand{\bfR}{\mbox{$\bf{R}$}}
+\newcommand{\bfS}{\mbox{$\bf{S}$}}
+\newcommand{\bfT}{\mbox{$\bf{T}$}}
+\newcommand{\bfU}{\mbox{$\bf{U}$}}
+\newcommand{\bfV}{\mbox{$\bf{V}$}}
+\newcommand{\bfW}{\mbox{$\bf{W}$}}
+\newcommand{\bfX}{\mbox{$\bf{X}$}}
+\newcommand{\bfY}{\mbox{$\bf{Y}$}}
+\newcommand{\bfZ}{\mbox{$\bf{Z}$}}
+
+\DeclareMathOperator*{\argmin}{argmin} 
+\DeclareMathOperator*{\argmax}{argmax} 
+\renewcommand{\footnotesize}{\fontsize{9pt}{11pt}\Large}
+
+\usepackage[svgnames]{xcolor}
+\usepackage{listings}
+
+\lstset{language=R,
+    basicstyle=\LARGE\tt,
+    stringstyle=\color{DarkGreen},
+    otherkeywords={0,1,2,3,4,5,6,7,8,9},
+    morekeywords={TRUE,FALSE},
+    deletekeywords={data,frame,length,as,character},
+    %keywordstyle=\color{blue},
+    commentstyle=\color{DarkGreen},
+}
+\CJKscale{0.9}
+\begin{document}
+\section{논의점1}
+\para{problem setting} $\{X_\ell\}$을 눈이 이동한 자취라고 해석하자. 예를들어 눈을 3번 쌓아서 ($\tau=3$) 아래와 같이 눈이 이동하였다고 한다면 
+\[
+v_1 \to v_{20} \to v_{5}
+\]
+$X_1,X_2,X_3$은 아래와 같이 정의할 수 있다. 
+\[
+X_1=v_1, \quad X_2=v_{20}, \quad X_{3}=v_5
+\]
+$h_(v,\ell)$을 노드 $v$에서 $\ell$번째 눈을 쌓았을때 얻어지는 지형이라고 하자. $\ell=0$일 경우에는 $h(v,0)=f(v)$라고 정의하자. $X_\ell$과 $h(v,\ell)$의 묶음을 아래와 같이 정의하자. 
+\[
+\bar{\bfX}_\ell=(h(v_1,\ell),\dots,h(v_n,\ell),X_\ell)
+\]
+(여기에서 bar는 extended의 의미로 사용하였다.) 이 확률벡터는 아래의 공간에서 정의됨을 기억하자. 
+\[
+S=\mathbb{R}^n \times {\cal V}
+\]
+여기에서 $n$은 노드들의 총수이고, ${\cal V}=\{v_1,\dots,v_n\}$은 노드들의 집합이다.
+
+\para{example} ${\cal V}=\{v_1,v_2\}$ 이고 
+\[
+f(v_1)=3, \quad f(v_2)=4
+\]
+라고 하자. $X_0=v_2$이고 눈이 쌓이는 양 $b=0.5$라고 하자. 이 경우 $X_1=v_1$이 된다. 그리고 
+\[
+\bar{\bfX}_0=(3,4,v_2)
+\]
+이고 
+\[
+\bar{\bfX}_1=(3.5,4,v_1)
+\]
+와 같이 표현할 수 있다. 
+\ck 
+확률벡터의 열 
+\[
+\bar{\bfX}_1, \bar{\bfX}_2, \dots
+\]
+는 틀림없이 (homogeneous) 마코프체인이다. 따라서 적당한 transition probability $p:(S,{\cal S})\to [0,1]$를 설정할 수 있다. 
+이때 $p$는 transition probability의 정의에 따라서 아래의 성질을 만족한다. 
+\begin{itemize}
+	\item[(i)] 모든 $x \in S$에 대하여 $A \to p(x,A)$가 probability measure on $(S,{\cal S})$
+	\item[(ii)] 모든 $A \in {\cal S}$에 대하여 $x \to p(x,A)$가 measurable function. 
+\end{itemize} 
+이럴때 $\{\bar{\bfX}_\ell\}$는 전이확률 $p$를 가지는 마코프체인이라고 표현한다. (w.r.t. ${\cal F}_\ell=\sigma(\bar{\bfX}_0,\dots,\bar{\bfX}_\ell)$)
+
+\ck 그런데 $\bar{\bfX}_\ell$은 모든 state가 transient하다. 왜냐하면 눈이 쌓일수록 $h(v,\ell)$은 점점 증가하기 때문에 $\bar{\bfX}_\ell$이 머물러있는 state를 다시 방문할 수 없기 때문이다. 위의 예제로 들면 $\bar{\bfX}_0$가 머물러있는 state
+\[
+\bar{\bfX}_0=(3,4,v_2)
+\]
+를 모든 $\bar{\bfX}_1,\bar{\bfX}_2,\dots$들이 다시 방문할 수 없다. (눈은 점점 쌓이기만 하니까) 이는 에르고디시티와 같은 일부 유용한 성질들을 증명할 수 없다는 것과 같다. 따라서 우리는 $\bar{\bfX}_\ell$에 관심을 두지 않고 $X_\ell$에 관심을 둘것이다. 
+
+\ck $\bar{\bfX}_\ell$이 정의되는 공간은 $S=\mathbb{R}^n\times {\cal V}$이며 state의 수가 무한개이지만 $X_\ell$은 ${\cal V}$에서 정의되며 state의 수가 유한개인 $n$이다. 어떠한 (homogeneous) 마코프체인이 finite state를 가지고 irreducible하면 에르고드하므로 $X_\ell$에 관심을 둔다면 에르고디시티와 같은 성질들을 보일 수 있을것 같다. 물론 $X_\ell$은 homogeneous하지 않으므로 위의 정리를 곧바로 적용할 순 없다. 
+
+\ck \textcolor{red}{$X_\ell$은 전이확률행렬 $\bfP(\ell)$이 일정하지 않고 $\ell$에 따라 달라지므로 non-homogeneous한 마코프체인으로 해석할 수 있다고 생각하였다.} 다행이 Hajnal의 연구에 따르면 적당한 조건하에서 $X_\ell$이 에르고드함을 보일 수 있다. 
+
+\ck 문제는 $X_\ell$이 전이확률행렬 $\bfP(\ell)$를 가지는 마코프체인이라고 볼 수 있는지 그렇지 않은지 헷갈린다는 점이다. 헷갈리는 이유는 아래와 같다. 
+\begin{itemize}
+	\item[(1)] $X_\ell$이 정의되는 상태집합은 ${\cal V}$인데 $\bfP(\ell)$이 정의되는 공간은 $(S,{\cal S})=(\mathbb{R}^n\times {\cal V}, {\cal S})$이다. 왜냐하면 지형의 모양을 알아야 다음확률을 결정할 수 있기 때문이다. 
+	\item[(2)] 하지만 혹시 아래와 같이 표현할수도 있지 않을까? 하는 생각이 든다. \newline\newline
+	$\bfP(\ell)$ as non-homogeneous transition matrix and $X_0,X_1,\dots,X_\ell$ as non-homogeneous Markov chain w.r.t ${\cal F}_\ell$ with $\bfP(\ell)$.
+\end{itemize}
+
+\ck 문제의 핵심은 어떠한 확률벡터가 마코프체인일경우 그 벡터의 일부원소를 취하면 그것을 마코프체인으로 해석할 수 있느냐는 것이다. 
+
+\ck 질문을 바꾸어 표현하면 다음과 같다. 보통 $X_n$이 마코프체인일 경우 임의의 measurable function $f:\Omega_o \to \mathbb{R}$에 대하여 아래와 같은 strong markov property가 성립함이 알려져 있다. 
+\[
+E\Big({f(X_0,\dots,X_{n+1})} | {\cal F}_n \Big)=E_{X_n}f(X_0,\dots,X_{n+1})
+\]
+여기에서 $\Omega_o=S^{\{0,1,2,\dots,\}}$이다. 
+이 성질을 우리의 문제상황에 맞추어 다시쓰면 아래와 같다. 
+\[
+E\Big({f(\bar{\bfX}_0,\dots,\bar{\bfX}_{\ell+1})} | {\cal F}_\ell \Big)=E_{\bar{\bfX}_\ell}f(\bar{\bfX}_0,\dots,\bar{\bfX}_{\ell+1})
+\]
+아래와 같이 함수 $f$를 정의한다면 
+\begin{align*}
+& f(\bar{\bfX}_0,\dots,\bar{\bfX}_{\ell+1}) \in S^{\{0\}} \times \dots \times S^{\{\ell\}} \times \big(\mathbb{R}^n \times V^*\big) \times \dots \times S^{\{\ell+2\}}\times \dots  \\ 
+& \Longleftrightarrow 1(X_\ell\in V^*)
+\end{align*}
+아래와 같이 쓸 수 있다. 
+\[
+P\Big(X_{\ell+1} \in V^*| {\cal F}_\ell \Big)=P_{\bar{\bfX}_\ell}\Big(X_{\ell+1}\in V^*\Big)= P\Big(X_{\ell+1}\in V^* ~|~ {\bar{\bfX}_\ell}\Big)
+\]
+위의 식이 성립한다면 
+\newline\newline
+$X_0,X_1,\dots,X_\ell$ as non-homogeneous Markov chain w.r.t ${\cal F}_\ell$ with $\bfP(\ell)$.
+\newline\newline
+라고 표현할 수 있을까? 
+
+\section{논의점2}
+\ck Hajnal 1958의 정리3을 적용하려면 반드시 $\{X_\ell\}$이 마코프체인임을 보여야 하는 것일까? $\bfP(\ell)$이 단지 stochastic matrix\footnote{row-sum이 1인 매트릭스}이어도 충분하지 않을까? 
+
+\section{논의점3}
+\ck Hajnal 1958의 정리3에서 $n$대신에 stopping time을 넣어도 성립하는가? 
+
+\end{document}
+
